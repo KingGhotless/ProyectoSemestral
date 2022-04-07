@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUSCRIPCION</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<body>
+        <!--LOGO SITIO WEB-->
+        <header>
+            <div class="container-fluid text-center bg-info">
+                <a href="index.html"><img src="img/logoslogan.png" alt="" width="150"></a>
+            </div>
+        </header>
+        
+        <!--TEXTO CENTRAL-->
+        <section>
+            <div class="container-fluid bg-primary text-center">
+                <div class="container text-white">
+                    <h1 class="display-4">Portal de Suscripción</h1>
+                    <h1 class="display-4">Pet World</h1>
+                    <h2 class="lead" >Fundación sin fines de lucro dedicada al apoyo incondicional de felinos y caninos por igual, sin dejar excenta cualquier especie animal distinta.</h2>
+                </div>
+                    <div class="container text-white text-center">
+                        <h1 class="display-4">¿Cómo nos ayuda tu suscripción?</h1>
+                        <h2 class="lead">Al estar suscrito aportas un porcentaje de cada compra a la fundación, además gozarás de un descuento de cada producto que compres.
+                            Mientras más productos tengas en tu carro, mayor será tu descuento al final de tu compra.
+                        </h2>
+                        <h2 class="lead">¡Inicia tu suscripción!</h2>
+                    </div>
+            
+                <!--CASILLA CENTRAL-->
+                <!--ROW | FILAS-->
+                <div class="row">
+                    <div class="col-sm-4 bg-primary">
+                        <!--ESPACIO-->
+                    </div>
+                    <div class="col-sm-4 bg-info">
+                        <div><h1></h1></div>        <!--ESPACIO-->
+                        <img src="img/logo2.png" alt="" width="200">
+                        <div><h6 class="lead">Para acceder a los beneficios, debe ingresar a su cuenta PetWorld y su tarjeta de crédito.</h6></div>
+                        <div><h6></h6></div>
+                        <!--FORMULARIO-->
+                        <section>
+                            <div class="mt-2 input-group">
+                                <input type="email" class="form-control input_login" placeholder="ejemplocorreo@gmail.com">
+                              </div>
+        
+                              <div class="mt-2 input-group">
+                                <input type="password" class="form-control input_login" placeholder="Contraseña" id="contra-crear"> 
+                                <div class="input-group-append"> <!--BUSCAR-->
+                                    <button class="btn btn-outline-secondary" type="button"><img src="img/eye.png" alt="" width="25" class="lazy"></button>
+                                    </div>
+                                <div class="text-right ml-2 mr-2 mt-1">
+                                    <a href="#" class=".text-.bg-info font-weight-bold">¿Olvidó su contraseña?</a>
+                                    </div>
+                            <!--Check Box Datos correctos-->
+                            <div class="d-block">
+                                <div class="custom-control custom-checkbox ml-2 d-inline-block">
+                                    <input type="checkbox" class="custom-control-input" id="checkDatos" value="9">
+                                    <label class="custom-control-label" for="checkDatos">
+                                    <p><b>Acepto</b><a href="condiciones.html" target="blank_"> <b>que los datos ingresados son correctos.</b> 
+                                    </a></p><a href="condiciones.html"></a>
+                                    </label>
+                                </div>
+                            </div>
+                            <!--BOTONES-->
+                            <div class="container">
+                                <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="index.html">Cancelar operación</button>
+                                <button type="submit" id="log" class="btn btn-success" data-toggle="modal" data-target="#myModal3">Ingresar Tarjeta</button>
+                            </div>
+                            <div><h6 class="lead">Una vez su tarjeta se confirmada, recibirá un correo de confirmación</h6></div>
+                        </section>   
+                    </div>
+                    <div class="col-sm-4">
+                        <!--ESPACIO-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 bg-primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 bg-primary">
+                    </div>
+                    <div class="col-sm-4 bg-primary">
+                        <div class=".mt-1"></div>
+                    </div>
+                    <div class="col-sm-4 bg-primary">
+                    </div>
+                </div>
+            </div>
+        </section>     
+
+            
+
+
+
+         <!--MODAL REGISTRO-->
+    <section>
+        <!-- The Modal -->
+        <div class="modal" id="myModal3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Ingrese datos tarjeta</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- CUERPO MODAL -->
+            <div class="modal-body text-center">
+                <div><h6>Tipo de tarjeta</h6></div>
+                <div class="mt-2 input-group">
+                    <input type="text" class="form-control" placeholder="Ingrese tipo">
+                </div>
+
+                <div><h6>Número de Tarjeta</h6></div>
+                <div class="mt-2 input-group">
+                    <input type="text" class="form-control" placeholder="123456789">
+                </div>
+
+                <div><h6>Fecha de expiración</h6></div>
+                <div class="mt-2 input-group">
+                    <input type="text" class="form-control" placeholder="Fecha Expiración">
+                </div>
+
+                <div><h6>Nombre del Titular</h6></div>
+                <div class="mt-2 input-group">
+                    <input type="text" class="form-control" placeholder="Juan Pérez">
+                </div>
+                <div><h6>Código de control</h6></div>
+                <div class="mt-2 input-group">
+                    <input type="text" class="form-control" placeholder="123">
+                </div>
+
+                <!--Check Box La tarjeta es correcta-->
+                <section>
+                    <div class="d-block">
+                        <div class="custom-control custom-checkbox ml-2 d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="checkAceptar" value="3">
+                            <label class="custom-control-label" for="checkAceptar">
+                                <p><b>Acepto</b><a href="condiciones.html" target="blank_"> <b>que los datos ingresados son correctos.</b> </a></p><a href="condiciones.html"></a>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            
+    
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal">Confirmar Datos</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </section>   
+    
+
+    <!--FOOTER-->
+    <div class="jumbotron bg-info navbar-dark center">
+        <div class="d-flex justify-content-between">                                <!--FLEX-->
+            <img src="img/LOGO.png" alt="" width="120">
+            <img src="img/logo2.png" alt="" width="180">
+        </div>
+    </div>
+
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
