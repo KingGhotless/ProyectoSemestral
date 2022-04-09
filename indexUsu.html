@@ -23,7 +23,7 @@
                 <ul class="list-unstyled">
                   <li><a href="#" class="text-white">Follow on Twitter</a></li>
                   <li><a href="#" class="text-white">Like on Facebook</a></li>
-                  <li><a href="#" class="text-white">Suscripción</a></li>
+                  <li><a href="#" class="text-white" data-toggle="modal" data-target="#suscrip">Suscripción</a></li>
                 </ul>
               </div>
             </div>
@@ -31,12 +31,14 @@
         </div>
         <div class="navbar navbar-dark  box-shadow" style="padding: 25px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
           <div class="container-fluid d-flex justify-content-between">
-            <a href="indexUsu.html"><img src="img/LOGOwhite.png" alt="" width="90"></a>
+            <a href="indexUsu.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
             <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Bienvenido de nuevo!</strong></h1>
+            <a href="carrito.html" style="margin-left: 1000px;"><img src="img/carroWhite.png" alt="" width="50"></a>
             <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
             <!--Acá va el nombre de la caja--> <img src="img/usuario.png" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
             </button>
           </div>
+          
         </div>
       </header>
 
@@ -60,7 +62,7 @@
                               <div class="dropdown-menu">
                                 <!-- Dropdown menu links -->
                                 <div class="text-center font-weight-bold">Accesorios</div>
-                                <a href="" class="dropdown-item">Bandanas</a>
+                                <a href="productosGato.html" class="dropdown-item">Bandanas</a>
                                 <a href="" class="dropdown-item">Correas</a>
                                 <a href="" class="dropdown-item">Identificadores</a>
                               </div>
@@ -502,8 +504,8 @@
 
     <!--Ventana términos de uso-->
     <section>
-          <!-- The Modal -->
-          <div class="modal fade" id="termUso">
+        <!-- The Modal -->
+        <div class="modal fade" id="termUso">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
             
@@ -559,9 +561,163 @@
                 </div>
               </div>
             </div>
-          </div>
+        </div>
     </section>
 
+    <!--Suscripción-->
+   <section>
+    <!-- The Modal -->
+  <div class="modal fade" id="suscrip">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+  
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="container">
+                <main>
+                  <div class="py-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="img/logo2.png" alt="" width="200">
+                    <h2>Formulario de suscripción</h2>
+                    <div class="container">
+                        <ul style="list-style: none;">
+                            <li><h2 class="lead">Fundación sin fines de lucro dedicada al apoyo incondicional de felinos y caninos por igual, sin dejar excenta cualquier especie animal.</h2></li>
+                            <li><h2 class="lead">Nuestro objetivo como fundación es recaudar dinero mensualmente para donarlo a animales necesitados de todas las especies y razas</h2></li>
+                            <li><h2 class="lead"><b>Tu suscripción puede salvar vidas de miles de mascotas abandonadas.</b></h2></li>
+                        </ul>
+                          <div class="container text-center">
+                           <h2 class="lead"><b>El valor mensual de la suscripción tiene un costo de $10.000 (sin valores agregados) y gozarás de descuentos por cada producto que compres. Mientras más productos tengas en tu carro, más alto será el descuento.</b></h2>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                    </div>
+                    <div class="container">
+                      <h4 class="mb-3">Ingresa los datos solicitados</h4>
+                      <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                          <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Se requiere un nombre válido.
+                            </div>
+                          </div>
+              
+                          <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Apellido/s</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Se requiere apellido/s válido.
+                            </div>
+                          </div>
+              
+                          <div class="col-12" style="padding: 15px;">
+                            <label for="Nombre de usuario" class="form-label">Nombre de usuario</label>
+                            <div class="input-group has-validation">
+                              <span class="input-group-text">@</span>
+                              <input type="text" class="form-control" id="username" placeholder="Username" required>
+                            <div class="invalid-feedback">
+                                Se requiere un nombre de usuario.
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="col-12" style="padding: 10px;">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+                            <div class="invalid-feedback">
+                              Ingrese correo válido para recibir newsletters.
+                            </div>
+                          </div>       
+
+                        </div>
+                        <hr class="my-4">
+              
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="save-info">
+                          <label class="form-check-label" for="save-info">Guardar información</label>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <h4 class="mb-3">Forma de pago</h4>
+              
+                        <div class="my-3">
+                          <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                            <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                          </div>
+                          <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Tarjeta de débito</label>
+                          </div>
+                          <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                          </div>
+                        </div>
+              
+                        <div class="row gy-3">
+                          <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-muted">Nombre completo como figura en la tarjeta</small>   
+                            <div class="invalid-feedback">
+                              Se requiere nombre en la tarjeta
+                            </div>
+                          </div>
+              
+                          <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Número de tarjeta de crédito</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Se requiere número de la tarjeta
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Expira</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                              Se requiere datos de expiración
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                              Código de seguridad requerido
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="save-info2">
+                                <label class="form-check-label" for="save-info2">Guardar información</label>
+                              </div>
+                              <section>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="termUso">
+                                    <p><b>Acepto</b><a href="#" data-toggle="modal" data-target="#termUso"> <b>términos y condiciones de uso.</b></a>
+                                  </div>
+                          </div>
+                            <button class="btn btn-primary" type="submit">Aceptar y continuar</button>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <button class="w-100 btn btn-danger btn-lg" data-dismiss="modal">Cancelar y volver</button>
+                      </form>
+                    </div>
+                  </div>
+                </main>
+        </div>
+      </div>
+    </div>
+   </section>
+  
     <!--FOOTER-->
     <div class="container">
   <footer class="row row-cols-5 py-5 my-5 border-top">
@@ -580,7 +736,7 @@
     <div class="col">
       <h5>Secciones</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contáctanos</a></li>
+        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Contáctanos</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Redes Sociales</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso">Políticas y términos</a></li>
