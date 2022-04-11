@@ -9,118 +9,121 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Navbar sin container para evitar margen-->
-    <header>
-        <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">USUARIO</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magni!</p>
-              </div>
-              <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
-                <h4 class="text-white">Datos de la cuenta</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                  <li><a href="#" class="text-white">Like on Facebook</a></li>
-                  <li><a href="#" class="text-white" data-toggle="modal" data-target="#suscrip">Suscripción</a></li>
-                </ul>
-              </div>
+  <header>
+    <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
+            <h4 class="text-white">Comprador12_</h4>
+            <img src="img/usuario.png" width="100" alt="">
+            <a href="indexSinUsu.html"><p><small>Cerrar Sesión</small></p></a>
             </div>
           </div>
-        </div>
-        <div class="navbar navbar-dark  box-shadow" style="padding: 25px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
-          <div class="container-fluid d-flex justify-content-between">
-            <a href="indexUsu.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
-            <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Bienvenido de nuevo!</strong></h1>
-            <a href="carrito.html" style="margin-left: 1000px;"><img src="img/carroWhite.png" alt="" width="50"></a>
-            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
-            <!--Acá va el nombre de la caja--> <img src="img/usuario.png" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
+            <h4 class="text-white">Información del usuario</h4>
+            <ul class="list-unstyled">
+                <li><p class="text-white">Nombre: Alejandro Rios</li> 
+                <li><p class="text-white">Dirección: Av. Concha y Toro 755</li> 
+                <h1 class="text-white" style="font-size: 20px">¿Aún no estás suscrito?</h1>
+              <li><a href="#" class="text-white" data-toggle="modal" data-target="#suscrip">Suscripción</a></li>
+            </ul>
           </div>
-          
         </div>
-      </header>
-
+      </div>
+    </div>
+    <div class="navbar navbar-dark  box-shadow" style="padding: 8px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="indexUsu.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
+        <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Bienvenido!</strong></h1>
+        <a href="carrito.html" style="margin-left: 1080px;"><img src="img/carroWhite.png" alt="" width="50"></a>
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
+        <!--Acá va el nombre de la caja--> <img src="img/usuario.png" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
+        </button>
+  </header>
+  <!--NAV-->
+  <section>
+    
+    <nav class="navbar navbar-expand-sm justify-content-center" style="height: 50px; background-color: rgb(144, 74, 209)";>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);">
+                  Perro
+                </button>
+                <div class="dropdown-menu">
+                    <div class="text-center font-weight-bold">Accesorios</div>
+                    <a href="productosGato.html" class="dropdown-item">Bandanas</a>
+                    <a href="" class="dropdown-item">Correas</a>
+                    <a href="" class="dropdown-item">Identificadores</a>
+                  </div>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);">
+                  Gato
+                </button>
+                <div class="dropdown-menu">
+                    <div class="text-center font-weight-bold">Accesorios</div>
+                    <a href="productosGato.html" class="dropdown-item">Bandanas</a>
+                    <a href="" class="dropdown-item">Correas</a>
+                    <a href="" class="dropdown-item">Identificadores</a>
+                  </div>
+                </div>
+              </div>
+          </li>
+        </ul>
+        <form class="form-inline" action="#" style="margin-left: 100px;">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+            <button class="btn text-white" type="submit" style="font-size: 15px; background: rgb(53, 165, 92);">Buscar</button>
+          </form>
+      </nav>
+  </section>
 
     <!--SECCIÓN 1-->
     <!--BARRA LATERAL + ROW-->
     <section>
-        <div class="container-fluid" style="background-color: rgb(243,197,141);">
-            <!--MENÚ LATERAL-->
-            <div class="row">
-                <div class="col-sm-1"> 
-                    <ul class="" style="list-style: none; margin-top: 30px;">
-                        <li> 
-                            <div class="btn-group dropright">
-                              <button type="button" class="btn btn-success">
-                                Perro
-                              </button>
-                              <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="sr-only">Toggle Dropright</span>
-                              </button>
-                              <div class="dropdown-menu">
-                                <!-- Dropdown menu links -->
-                                <div class="text-center font-weight-bold">Accesorios</div>
-                                <a href="productosGato.html" class="dropdown-item">Bandanas</a>
-                                <a href="" class="dropdown-item">Correas</a>
-                                <a href="" class="dropdown-item">Identificadores</a>
-                              </div>
-                            </div>
-                        </li>
-                                <!--DROP 2-->
-                            <div class="btn-group dropright" style="margin-top: 5px;">
-                                <button type="button" class="btn btn-success" style="margin-top: 30px;">
-                                  Gato
-                                </button>
-                                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="margin-top: 30px;">
-                                  <span class="sr-only">Toggle Dropright</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                  <!-- Dropdown menu links -->
-                                  <div class="text-center font-weight-bold">Accesorios</div>
-                                  <a href="" class="dropdown-item">Bandanas</a>
-                                  <a href="" class="dropdown-item">Correas</a>
-                                  <a href="" class="dropdown-item">Identificadores</a>
-                                </div>
-                              </div>
-                </div>
-                   
-                    
-                <!--FILA CENTRAL-->
-                <div class="col-sm-10 btn-group">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                          <li data-target="#demo" data-slide-to="0" class="active"></li>
-                          <li data-target="#demo" data-slide-to="1"></li>
-                          <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-                      <!-- The slideshow -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/banner/dp.png" alt="Los Angeles">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/banner/banner2.png" alt="Los Angeles">
-                      </div>
-                      <!--div class="carousel-item">
-                        <img src="ny.jpg" alt="New York">
-                      </div-->
+      <div class="container-fluid" style="background-color: rgb(243,197,141);">
+          <!--MENÚ LATERAL-->
+          <div class="row">
+              <div class="col-sm-1">      
+              <!--FILA CENTRAL-->
+              <div class="col-sm-10 btn-group">
+                  <div id="demo" class="carousel slide" data-ride="carousel" style="margin-left: 105px;">
+                      <!-- Indicators -->
+                      <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                      </ul>
+                    <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/banner/dp.png" alt="Los Angeles">
                     </div>
-                     <!-- Left and right controls -->
-                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                       <span class="carousel-control-prev-icon"></span>
-                     </a>
-                     <a class="carousel-control-next" href="#demo" data-slide="next">
-                       <span class="carousel-control-next-icon"></span>
-                     </a>
-                </div>
-                <div class="col-sm-1"></div>
-            </div>
-        </div>
-    </section>  
+                    <div class="carousel-item">
+                      <img src="img/banner/banner2.png" alt="Los Angeles">
+                    </div>
+                    <!--div class="carousel-item">
+                      <img src="ny.jpg" alt="New York">
+                    </div-->
+                  </div>
+                   <!-- Left and right controls -->
+                   <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                     <span class="carousel-control-prev-icon"></span>
+                   </a>
+                   <a class="carousel-control-next" href="#demo" data-slide="next">
+                     <span class="carousel-control-next-icon"></span>
+                   </a>
+              </div>
+              <div class="col-sm-1"></div>
+          </div>
+      </div>
+  </section>  
 
     <!--SECCIÓN 2-->
     <div class="container-fluid justify-content-between" 
@@ -226,7 +229,7 @@
         </section>
     </div>
     
-    <!--SECCIÓN 2-->
+    <!--SECCIÓN 3-->
     <div class="container-fluid justify-content-between" 
             style="background-color: rgb(240, 172, 89); 
             flex-wrap: wrap;">
@@ -426,7 +429,6 @@
     </div>
     </section>
 
-
     <!--MODAL INICIO-->
     <section>
         <!-- The Modal -->
@@ -473,7 +475,6 @@
 
     <!--MODAL COMPRA-->
     <section>
-    <!-- The Modal -->
     <div class="modal fade" id="productoAgregado">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -566,7 +567,6 @@
 
     <!--Suscripción-->
    <section>
-    <!-- The Modal -->
   <div class="modal fade" id="suscrip">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
@@ -613,10 +613,10 @@
                           </div>
               
                           <div class="col-12" style="padding: 15px;">
-                            <label for="Nombre de usuario" class="form-label">Nombre de usuario</label>
+                            <label for="Nombreusuario" class="form-label">Nombre de usuario</label>
                             <div class="input-group has-validation">
                               <span class="input-group-text">@</span>
-                              <input type="text" class="form-control" id="username" placeholder="Username" required>
+                              <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
                             <div class="invalid-feedback">
                                 Se requiere un nombre de usuario.
                               </div>

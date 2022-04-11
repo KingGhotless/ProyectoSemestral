@@ -9,111 +9,132 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Navbar sin container para evitar margen-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark" style="padding: 20px; background-color: rgb(156, 94, 214);">
-            <a class="navbar-brand" href="indexSinUsu.html"><img src="img/LOGOwhite.png" alt="" width="90"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
+      <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
+              <h4 class="text-white">¡No tienes una cuenta!</h4>
+              <img src="img/perfilWhite.png" width="100" alt="">
+              </div>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
+              <h4 class="text-white">Información del usuario</h4>
+              <ul class="list-unstyled">
+                  <li><p class="text-white">Nombre: </li> 
+                  <li><p class="text-white">Dirección: </li> 
+                  <h1 class="text-white" style="font-size: 20px">¿Aún no estás suscrito?</h1>
+                <li><p class="text-white">Para suscribirte debes <a href="" data-toggle="modal" data-target="#myModal1">tener una cuenta</a></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark  box-shadow" style="padding: 8px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
+        <div class="container-fluid d-flex justify-content-between">
+          <a href="indexUsu.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
+          <h1 class="lead text-white" style="font-size: 30px; margin-right: 1077px;"><strong>¡Bienvenido!</strong></h1>
+          <div class="btn-group dropleft">
+            <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: rgb(53, 165, 92);">
+                Cuenta<!--BOTÓN DESPLEGAR MENÚ-->
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar"> <!--envío los links al final "justify..."-->
-              <ul class="navbar-nav">
-                <div class="btn-group dropleft">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Cuenta<!--BOTÓN DESPLEGAR MENÚ-->
-                    </button>
-                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuBoton">
-                        <div class="text-center font-weight-bold">¡Únete a la comunidad!</div>
-                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#myModal1">Iniciar Sesión</a>
-                        <div class="dropdown-divider"></div> <!--Dividir sección barra plegable-->
-                        <div class="text-center font-weight-bold">¿Eres cliente nuevo?</div>
-                        <a href="#" class="dropdown-item" id="crear_cuenta" data-toggle="modal" data-target="#myModal">Crear Cuenta</a>
+            <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuBoton">
+                <div class="text-center font-weight-bold">¡Únete a la comunidad!</div>
+                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#myModal1">Iniciar Sesión</a>
+                <div class="dropdown-divider"></div> <!--Dividir sección barra plegable-->
+                <div class="text-center font-weight-bold">¿Eres cliente nuevo?</div>
+                <a href="#" class="dropdown-item" id="crear_cuenta" data-toggle="modal" data-target="#myModal">Crear Cuenta</a>
+            </div>
+          </div>
+          
+          <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
+          <!--Acá va el nombre de la caja--> <img src="img/perfilWhite.png" alt="" width="25"> Sin usuario <span class="navbar-toggler-icon"></span>
+          </button>
+    </header>
+    <!--NAV-->
+    <section>
+      <nav class="navbar navbar-expand-sm justify-content-center" style="height: 50px; background-color: rgb(144, 74, 209)";>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);">
+                    Perro
+                  </button>
+                  <div class="dropdown-menu">
+                      <div class="text-center font-weight-bold">Accesorios</div>
+                      <a href="productosGato.html" class="dropdown-item">Bandanas</a>
+                      <a href="" class="dropdown-item">Correas</a>
+                      <a href="" class="dropdown-item">Identificadores</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);">
+                    Gato
+                  </button>
+                  <div class="dropdown-menu">
+                      <div class="text-center font-weight-bold">Accesorios</div>
+                      <a href="productosGato.html" class="dropdown-item">Bandanas</a>
+                      <a href="" class="dropdown-item">Correas</a>
+                      <a href="" class="dropdown-item">Identificadores</a>
                     </div>
                   </div>
-              </ul>
-            </div>  
+                </div>
+            </li>
+          </ul>
+          <form class="form-inline" action="#" style="margin-left: 100px;">
+              <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+              <button class="btn text-white" type="submit" style="font-size: 15px; background: rgb(53, 165, 92);">Buscar</button>
+            </form>
         </nav>
-    </header>
+    </section>
 
 
     <!--SECCIÓN 1-->
     <!--BARRA LATERAL + ROW-->
     <section>
-        <div class="container-fluid" style="background-color: rgb(243,197,141);">
-            <!--MENÚ LATERAL-->
-            <div class="row">
-                <div class="col-sm-1"> 
-                    <ul class="" style="list-style: none; margin-top: 30px;">
-                        <li> 
-                            <div class="btn-group dropright">
-                              <button type="button" class="btn btn-success">
-                                Perro
-                              </button>
-                              <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="sr-only">Toggle Dropright</span>
-                              </button>
-                              <div class="dropdown-menu">
-                                <!-- Dropdown menu links -->
-                                <div class="text-center font-weight-bold">Accesorios</div>
-                                <a href="" class="dropdown-item">Bandanas</a>
-                                <a href="" class="dropdown-item">Correas</a>
-                                <a href="" class="dropdown-item">Identificadores</a>
-                              </div>
-                            </div>
-                        </li>
-                                <!--DROP 2-->
-                            <div class="btn-group dropright" style="margin-top: 5px;">
-                                <button type="button" class="btn btn-success" style="margin-top: 30px;">
-                                  Gato
-                                </button>
-                                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="margin-top: 30px;">
-                                  <span class="sr-only">Toggle Dropright</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                  <!-- Dropdown menu links -->
-                                  <div class="text-center font-weight-bold">Accesorios</div>
-                                  <a href="" class="dropdown-item">Bandanas</a>
-                                  <a href="" class="dropdown-item">Correas</a>
-                                  <a href="" class="dropdown-item">Identificadores</a>
-                                </div>
-                              </div>
-                </div>
-                   
-                    
-                <!--FILA CENTRAL-->
-                <div class="col-sm-10 btn-group">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                          <li data-target="#demo" data-slide-to="0" class="active"></li>
-                          <li data-target="#demo" data-slide-to="1"></li>
-                          <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-                      <!-- The slideshow -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/banner/dp.png" alt="Los Angeles">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/banner/banner2.png" alt="Los Angeles">
-                      </div>
-                      <!--div class="carousel-item">
-                        <img src="ny.jpg" alt="New York">
-                      </div-->
+      <div class="container-fluid" style="background-color: rgb(243,197,141);">
+          <!--MENÚ LATERAL-->
+          <div class="row">
+              <div class="col-sm-1">      
+              <!--FILA CENTRAL-->
+              <div class="col-sm-10 btn-group">
+                  <div id="demo" class="carousel slide" data-ride="carousel" style="margin-left: 105px;">
+                      <!-- Indicators -->
+                      <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                      </ul>
+                    <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/banner/dp.png" alt="Los Angeles">
                     </div>
-                     <!-- Left and right controls -->
-                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                       <span class="carousel-control-prev-icon"></span>
-                     </a>
-                     <a class="carousel-control-next" href="#demo" data-slide="next">
-                       <span class="carousel-control-next-icon"></span>
-                     </a>
-                </div>
-                <div class="col-sm-1"></div>
-            </div>
-        </div>
-    </section>  
+                    <div class="carousel-item">
+                      <img src="img/banner/banner2.png" alt="Los Angeles">
+                    </div>
+                    <!--div class="carousel-item">
+                      <img src="ny.jpg" alt="New York">
+                    </div-->
+                  </div>
+                   <!-- Left and right controls -->
+                   <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                     <span class="carousel-control-prev-icon"></span>
+                   </a>
+                   <a class="carousel-control-next" href="#demo" data-slide="next">
+                     <span class="carousel-control-next-icon"></span>
+                   </a>
+              </div>
+              <div class="col-sm-1"></div>
+          </div>
+      </div>
+  </section>   
 
     <!--SECCIÓN 2-->
     <div class="container-fluid justify-content-between" 
@@ -219,7 +240,7 @@
         </section>
     </div>
     
-    <!--SECCIÓN 2-->
+    <!--SECCIÓN 3-->
     <div class="container-fluid justify-content-between" 
             style="background-color: rgb(240, 172, 89); 
             flex-wrap: wrap;">
