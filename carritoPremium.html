@@ -8,40 +8,38 @@
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 <body>
-    <header>
-        <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-md-7 py-4">
-                <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
-                <h4 class="text-white">Comprador12_</h4>
-                <img src="img/usuario.png" width="100" alt="">
-                </div>
-              </div>
-              <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
-                <h4 class="text-white">Información del usuario</h4>
-                <ul class="list-unstyled">
-                  <li><p class="text-white">Nombre</li> 
-                  <li><p class="text-white">Dirección</li> 
-                    <h1 class="text-white" style="font-size: 20px">¿Aún no estás suscrito?</h1>
-                  <li><a href="#" class="text-white" data-toggle="modal" data-target="#suscrip">Suscripción</a></li>
-                </ul>
-              </div>
+  <header>
+    <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
+            <h4 class="text-white">Comprador12_</h4>
+            <img src="img/usuario.png" width="100" alt="">
+            <a href="index.html"><p><small>Cerrar Sesión</small></p></a>
             </div>
           </div>
-        </div>
-        <div class="navbar navbar-dark  box-shadow" style="padding: 25px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
-          <div class="container-fluid d-flex justify-content-between">
-            <a href="indexUsu.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
-            <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Bienvenido de nuevo!</strong></h1>
-            <a href="carrito.html" style="margin-left: 1000px;"><img src="img/carroWhite.png" alt="" width="50"></a>
-            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
-            <!--Acá va el nombre de la caja--> <img src="img/usuario.png" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
+            <h4 class="text-white">Información del usuario</h4>
+            <ul class="list-unstyled">
+                <li><p class="text-white">Nombre: Alejandro Rios</li> 
+                <li><p class="text-white">Dirección: Av. Concha y Toro 755</li> 
+                <h1 class="text-white" style="font-size: 20px">Suscripción</h1>
+              <li><a href="#" class="" data-toggle="modal" data-target="#suscrip">Estado de suscripción</a></li>
+            </ul>
           </div>
-          
         </div>
-      </header>
+      </div>
+    </div>
+    <div class="navbar navbar-dark  box-shadow" style="padding: 8px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="indexSuscrip.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
+        <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Usuario Premium!</strong></h1>
+        <a href="carritoPremium.html" style="margin-left: 1000px;"><img src="img/carroWhite.png" alt="" width="50"></a>
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
+        <!--Acá va el nombre de la caja--> <img src="img/usuario.png" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
+        </button>
+  </header>
 
       <div class="container" style="max-width: 1300px;">
         <main>
@@ -49,7 +47,6 @@
                 <h2>Carrito de compras</h2>
                 <p class="text-muted">&copy; PetWorld 2022</p>
             </div>
-        
             <div class="row">
               <div class="col-md-5 col-lg-4 order-md-last">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -59,30 +56,30 @@
                 <ul class="list-group mb-3">    <!--Lista de productos en el carro-->
                   <li class="list-group-item d-flex justify-content-between lh-sm">
                     <div>
-                      <h6 class="my-0">Bandana Electric</h6>
+                      <h6 class="my-0">Bandana "electric"</h6>
                       <small class="text-muted">Cantidad x1</small>
                     </div>
-                    <span class="text-muted">$3.990</span>
+                    <span class="text-muted">$3.591</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between lh-sm">
                     <div>
                       <h6 class="my-0">Placa Meow</h6>
                       <small class="text-muted">Cantidad x1</small>
                     </div>
-                    <span class="text-muted">$1.990</span>
+                    <span class="text-muted">$1.790</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between lh-sm">
                     <div>
                       <h6 class="my-0">Correa Rayas</h6>
                       <small class="text-muted">x1</small>
                     </div>
-                    <span class="text-muted">$6.990</span>
+                    <span class="text-muted">$4.240</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between" style="background-color: rgb(235, 209, 209);">
                     <div class="">
                       <h6 class="my-0">Subtotal</h6>
                     </div>
-                    <span class="">$12.970</span>
+                    <span class="">$9.621</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between bg-light">
                     <div class="text-success">
@@ -91,9 +88,16 @@
                     </div>
                     <span class="text-success">−$5.000</span>
                   </li>
+                  <li class="list-group-item d-flex justify-content-between bg-light">
+                    <div class="text-success">
+                      <h6 class="my-0">DCTOPREMIUM</h6>
+                      <small>5% x 3 productos</small>
+                    </div>
+                    <span class="text-success">-230</span>
+                  </li>
                   <li class="list-group-item d-flex justify-content-between">
                     <span>Total (CLP)</span>
-                    <strong>$7.970</strong>
+                    <strong>$4.391</strong>
                   </li>
                 </ul>
                 <!--fuera de la lista para quedar en línea pero en casilla diferente-->
@@ -104,8 +108,8 @@
                   </div>
                 </form>
                 <div class="text-center mt-3">
-                  <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#confirmarAccion" style="width:405px;">Pagar</button>
-              </div>
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#confirmarAccion" style="width:405px;">Pagar</button>
+                </div>
               </div> <!--Cierre row lateral-->
               
               <div class="col-md-7 col-lg-8">
@@ -127,7 +131,7 @@
                     <!--Descripción producto-->
                     <h6>Bandana Electric</h6>
                     <small class="text-muted">Color: rojo</small>
-                    <span class="text-muted">$3.990</span>
+                    <span class="text-muted">$3.591</span>
                   </li>
 
                   <!--PRODUCTO 2-->
@@ -141,7 +145,7 @@
                     <!--DESC PRODUCTO-->
                     <h6>Placa Meow</h6>
                     <small class="text-muted">Color: gris</small>
-                    <span class="text-muted">$1.990</span>
+                    <span class="text-muted">$1.790</span>
                   </li>
 
                   <!--PRODUCTO 3-->
@@ -153,9 +157,9 @@
                         </label>
                     </div>
                     <!--DESC PRODUCTO-->
-                    <h6>Correa Rayas</h6>
+                    <h6>Correa rayas</h6>
                     <small class="text-muted">Color: negro</small>
-                    <span class="text-muted">$6.990</span>
+                    <span class="text-muted">$4.240</span>
                   </li>
                 </ul>
               </div>
@@ -228,204 +232,76 @@
     <!--Suscripción-->
     <section>
       <div class="modal fade" id="suscrip">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
       
       
             <!-- Modal body -->
             <div class="modal-body">
-                <div class="container">
-                    <main>
-                      <div class="py-5 text-center">
-                        <img class="d-block mx-auto mb-4" src="img/logo2.png" alt="" width="200">
-                        <h2>Formulario de suscripción</h2>
-                        <div class="container">
-                            <ul style="list-style: none;">
-                                <li><h2 class="lead">Fundación sin fines de lucro dedicada al apoyo incondicional de felinos y caninos por igual, sin dejar excenta cualquier especie animal.</h2></li>
-                                <li><h2 class="lead">Nuestro objetivo como fundación es recaudar dinero mensualmente para donarlo a animales necesitados de todas las especies y razas</h2></li>
-                                <li><h2 class="lead"><b>Tu suscripción puede salvar vidas de miles de mascotas abandonadas.</b></h2></li>
-                            </ul>
-                              <div class="container text-center">
-                               <h2 class="lead"><b>El valor mensual de la suscripción tiene un costo de $10.000 (sin valores agregados) y gozarás de descuentos por cada producto que compres. Mientras más productos tengas en tu carro, más alto será el descuento.</b></h2>
-                              </div>
-                          </div>
-                      </div>
-                      </div>
+                <div class="modal-body position-static d-block">
+                    <div class="modal-content rounded-1 shadow">
+                        <div class="modal-body p-4 text-center rounded-1">
+                            <img src="img/correcto.png" width="50" alt="">
+                          <h5 class="mb-0">¡Tu suscripción está activa!</h5>
+                          <p class="mb-0">Gracias por apoyarnos, puedes cancelar tu suscripción en cualquier momento</p>
                         </div>
-                        <div class="container">
-                          <h4 class="mb-3">Ingresa los datos solicitados</h4>
-                          <form class="needs-validation" novalidate>
-                            <div class="row g-3">
-                              <div class="col-sm-6">
-                                <label for="firstName" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                  Se requiere un nombre válido.
-                                </div>
-                              </div>
-                  
-                              <div class="col-sm-6">
-                                <label for="lastName" class="form-label">Apellido/s</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    Se requiere apellido/s válido.
-                                </div>
-                              </div>
-                  
-                              <div class="col-12" style="padding: 15px;">
-                                <label for="Nombreusuario" class="form-label">Nombre de usuario</label>
-                                <div class="input-group has-validation">
-                                  <span class="input-group-text">@</span>
-                                  <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
-                                <div class="invalid-feedback">
-                                    Se requiere un nombre de usuario.
-                                  </div>
-                                </div>
-                              </div>
-                  
-                              <div class="col-12" style="padding: 10px;">
-                                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
-                                <div class="invalid-feedback">
-                                  Ingrese correo válido para recibir newsletters.
-                                </div>
-                              </div>       
-    
-                            </div>
-                            <hr class="my-4">
-                  
-                            <div class="form-check">
-                              <input type="checkbox" class="form-check-input" id="save-info">
-                              <label class="form-check-label" for="save-info">Guardar información</label>
-                            </div>
-                  
-                            <hr class="my-4">
-                  
-                            <h4 class="mb-3">Forma de pago</h4>
-                  
-                            <div class="my-3">
-                              <div class="form-check">
-                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                                <label class="form-check-label" for="credit">Tarjeta de crédito</label>
-                              </div>
-                              <div class="form-check">
-                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                                <label class="form-check-label" for="debit">Tarjeta de débito</label>
-                              </div>
-                              <div class="form-check">
-                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                                <label class="form-check-label" for="paypal">PayPal</label>
-                              </div>
-                            </div>
-                  
-                            <div class="row gy-3">
-                              <div class="col-md-6">
-                                <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                                <small class="text-muted">Nombre completo como figura en la tarjeta</small>   
-                                <div class="invalid-feedback">
-                                  Se requiere nombre en la tarjeta
-                                </div>
-                              </div>
-                  
-                              <div class="col-md-6">
-                                <label for="cc-number" class="form-label">Número de tarjeta de crédito</label>
-                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Se requiere número de la tarjeta
-                                </div>
-                              </div>
-                  
-                              <div class="col-md-3">
-                                <label for="cc-expiration" class="form-label">Expira</label>
-                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                                <div class="invalid-feedback">
-                                  Se requiere datos de expiración
-                                </div>
-                              </div>
-                  
-                              <div class="col-md-3">
-                                <label for="cc-cvv" class="form-label">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                                <div class="invalid-feedback">
-                                  Código de seguridad requerido
-                                </div>
-                              </div>
-    
-                              <div class="col-md-3">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="save-info2">
-                                    <label class="form-check-label" for="save-info2">Guardar información</label>
-                                  </div>
-                                  <section>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="termUso">
-                                        <p><b>Acepto</b><a href="#" data-toggle="modal" data-target="#termUso"> <b>términos y condiciones de uso.</b></a>
-                                      </div>
-                              </div>
-                                <button class="btn btn-primary" type="submit"><a href="indexSuscrip.html" class="text-white">Aceptar y continuar</a></button>
-                            </div>
-                  
-                            <hr class="my-4">
-                            <button class="w-100 btn btn-danger btn-lg" data-dismiss="modal">Cancelar y volver</button>
-                          </form>
-                        </div>
-                      </div>
-                    </main>
+                  </div>
+                  <div class="modal-footer flex-nowrap p-0">
+                    <a href="" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right" data-dismiss="modal"><strong>¡Gracias!</strong></a>
+                    <a href="indexUsu.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0">Cancelar suscripción</a>
+                  </div> 
             </div>
           </div>
         </div>
        </section>
 
     <!--Confirmar pago-->
-    <section>
-      <div class="modal fade" id="confirmarAccion">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-      
-            <!-- Modal body -->
-            <div class="modal-body text-center">
-              <h4>Estamos procesando su pago</h4>
-              <div class="text-center">
-                <div class="spinner-grow" style="margin: 50px; background-color: blueviolet;"></div>
-              </div>
-              
-              <a href="indexUsu.html" class="btn btn-success">Click aquí para continuar</a>
-            </div>
-      
-      
-          </div>
+<div class="modal fade" id="confirmarAccion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <!-- Modal body -->
+      <div class="modal-body text-center">
+        <h4>Estamos procesando su pago</h4>
+        <div class="text-center">
+          <div class="spinner-grow" style="margin: 50px; background-color: blueviolet;"></div>
         </div>
+        
+        <a href="indexSuscrip.html" class="btn btn-success">Click aquí para continuar</a>
       </div>
-    </section>
+
+
+    </div>
+  </div>
+</div>
         
     <!--FOOTER-->
     <div class="container">
-        <footer class="row row-cols-5 py-5 my-5 border-top">
-          <div class="col">
-            <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
-          </div>
-      
-          <div class="col"></div>
-      
-          <div class="col text-center">
-              <a href="index.html"><img src="img/logoslogan.png" alt="" width="150"></a>
-          </div>
-      
-          <div class="col"></div>
-      
-          <div class="col">
-            <h5>Secciones</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Contáctanos</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Redes Sociales</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso">Políticas y términos</a></li>
-            </ul>
-          </div>
-        </footer>
-      </div>
+      <footer class="row row-cols-5 py-5 my-5 border-top">
+        <div class="col">
+          <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
+        </div>
+    
+        <div class="col"></div>
+    
+        <div class="col text-center">
+            <a href="indexSuscrip.html"><img src="img/logoslogan.png" alt="" width="150"></a>
+        </div>
+    
+        <div class="col"></div>
+    
+        <div class="col">
+          <h5>Secciones</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Contáctanos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Redes Sociales</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso">Políticas y términos</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
 
 
 <!-- jQuery library -->

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prodGatoId</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
+            <h4 class="text-white">Comprador12_</h4>
+            <img src="img/usuario.png" width="100" alt="">
+            <a href="index.html"><p><small>Cerrar Sesión</small></p></a>
+            </div>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
+            <h4 class="text-white">Información del usuario</h4>
+            <ul class="list-unstyled">
+                <li><p class="text-white">Nombre: Alejandro Rios</li> 
+                <li><p class="text-white">Dirección: Av. Concha y Toro 755</li> 
+                <h1 class="text-white" style="font-size: 20px">¿Aún no estás suscrito?</h1>
+              <li><a href="#" class="" data-toggle="modal" data-target="#suscrip">Suscripción</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark  box-shadow" style="padding: 8px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="indexUsu.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
+        <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Bienvenido!</strong></h1>
+        <a href="carrito.html" style="margin-left: 1080px;"><img src="img/carroWhite.png" alt="" width="50"></a>
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
+        <!--Acá va el nombre de la caja--> <img src="img/usuario.png" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
+        </button>
+  </header>
+  <!--NAV-->
+  <section>
+    <nav class="navbar navbar-expand-sm justify-content-center" style="height: 50px; background-color: rgb(144, 74, 209)";>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);">
+                  Perro
+                </button>
+                <div class="dropdown-menu">
+                    <div class="text-center font-weight-bold">Accesorios</div>
+                    <a href="prodPerroBandana.html" class="dropdown-item">Bandanas</a>
+                    <a href="prodPerroCorrea.html" class="dropdown-item">Correas</a>
+                    <a href="prodPerroId.html" class="dropdown-item">Identificadores</a>
+                  </div>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);">
+                  Gato
+                </button>
+                <div class="dropdown-menu">
+                    <div class="text-center font-weight-bold">Accesorios</div>
+                    <a href="prodGatoBandana.html" class="dropdown-item">Bandanas</a>
+                    <a href="prodGatoCorrea.html" class="dropdown-item">Correas</a>
+                    <a href="prodGatoId.html" class="dropdown-item">Identificadores</a>
+                  </div>
+                </div>
+              </div>
+          </li>
+        </ul>
+        <form class="form-inline" action="#" style="margin-left: 100px;">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+            <button class="btn text-white" type="submit" style="font-size: 15px; background: rgb(53, 165, 92);">Buscar</button>
+          </form>
+      </nav>
+  </section>
+
+    <!--SECCIÓN 1-->
+    <div class="container-fluid justify-content-between" 
+            style="background-color: rgb(241, 187, 121); 
+            flex-wrap: wrap;">
+            <div class="text-center">
+              <h1 class="text-center lead" style="font-family: Arial, Helvetica, sans-serif; padding: 50px; font-size: 30px;">¡Identificadores de todo tipo!</h1>
+            </div>
+            
+        <section>
+            <div class="row text-center"> 
+                <div class="col-sm-1"></div>
+                <!--PRODUCTO 1-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/1_placa_rosa.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Patita</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Rosa, rojo</li>
+                                <li>Para: gato</li>
+                                <li><small>incluye collar</small></li>
+                                <li>Valor: $3.990</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 2-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/2_placa_2.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Hueso</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Rojo, negro, gris</li>
+                                <li>Para: Gato</li>
+                                <li><small>no incluye collar</small></li>
+                                <li>Valor: $2.990</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 3-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/3_placa_negra.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Hueso</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Negro</li>
+                                <li>Para: Gato</li>
+                                <li><small>incluye collar</small></li>
+                                <li>Valor: $3.990</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 4-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/4_placa_verde.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Perrito</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Verde</li>
+                                <li>Para: Gato</li>
+                                <li><small>no incluye collar</small></li>
+                                <li>Valor: $1.990</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 4-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/5_placa_salchicha.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Salchicha</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Café</li>
+                                <li>Para: Gato</li>
+                                <li><small>incluye collar</small></li>
+                                <li>Valor: $3.990</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div> 
+        </section>
+    </div>
+    
+    <!--SECCIÓN 2-->
+    <div class="container-fluid justify-content-between" 
+            style="background-color: rgb(240, 172, 89); 
+            flex-wrap: wrap;">
+            <h1 class="text-center lead" style="font-family: Arial, Helvetica, sans-serif; padding: 50px; font-size: 30px;"></h1>
+        <section>
+            <div class="row text-center"> 
+                <div class="col-sm-1"></div>
+                <!--PRODUCTO 1-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/6_placa_perro_blanco.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Perrito</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Blanco</li>
+                                <li>Para: Gato</li>
+                                <li><small>incluye collar</small></li>
+                                <li>Valor: $4.890</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 2-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/7_perro_mancha_ojo.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Perrito</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Blanco</li>
+                                <li>Para: Gato</li>
+                                <li><small>no incluye collar</small></li>
+                                <li>Valor: $2.590</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 3-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/8_perro_ojos_blancos.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Perrito</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Blanco</li>
+                                <li>Para: Gato</li>
+                                <li><small>no incluye collar</small></li>
+                                <li>Valor: $3.690</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 4-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/9_placa_perro_triste.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Perrito</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Blanco, café</li>
+                                <li>Para: Gato</li>
+                                <li><small>incluye collar</small></li>
+                                <li>Valor: $4.990</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 4-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="img/placas/10_placa_mmeow.png" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Placa Meow</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Negro, blanco</li>
+                                <li>Para: Gato</li>
+                                <li><small>no incluye collar</small></li>
+                                <li>Valor: $3.990</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div> 
+        </section>
+    </div>
+
+    
+
+
+    <!--MODAL REGISTRO-->
+    <section>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">¡Regístrate!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- CUERPO MODAL -->
+        <div class="text-center">
+            <img class="avatar text-center" src="img/perfil.png" alt="" width="80" style="margin-top: 20px;">
+        </div>
+        <p class="text-center"><b>Ingresa los datos solicitados</b></p>
+        <div class="modal-body">
+            <div class="mt-2 input-group">
+                <input type="text" class="form-control" placeholder="Nombre Completo">
+            </div>
+            <div class="mt-2 input-group">
+                <input type="email" class="form-control" placeholder="ejemplocorreo@gmail.com">
+            </div>
+            <div class="mt-2 input-group">
+                <input type="password" class="form-control" placeholder="Contraseña" id="contra-crear"> 
+                <div class="input-group-append"> <!--BUSCAR-->
+                    <button class="btn btn-outline-secondary" type="button"><img src="img/eye.png" alt="" width="25" class="lazy"></button>
+                </div>
+            </div>
+                
+            <!--CHECKBOXS-->
+            <div class="container">
+                <div class="text-left ml-2 mr-2 mt-3 text-center">
+                    <span class="font-weight-bold">¿Tienes mascota?</span>
+                    <div><h1></h1></div>
+                </div>
+                <!--Check Box perro-->
+                <section>
+                    <div class="d-block">
+                        <div class="custom-control custom-checkbox ml-2 d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="checkPerro" value="1">
+                            <label class="custom-control-label" for="checkPerro">
+                                <p class="font-weight-bold">Perro</p>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                <!--Check Box gato-->
+                <section>
+                    <div class="d-block">
+                        <div class="custom-control custom-checkbox ml-2 d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="checkGato" value="2">
+                            <label class="custom-control-label" for="checkGato">
+                                <p class="font-weight-bold">Gato</p>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!--Check Box Términos de uso-->
+            <div class="text-center">
+                <section>
+                    <div class="d-block">
+                        <div class="custom-control custom-checkbox ml-2 d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="checkAceptar" value="3">
+                            <label class="custom-control-label" for="checkAceptar">
+                                <p><b>Acepto</b><a href="#" data-toggle="modal" data-target="#termUso"> <b>términos y condiciones de uso.</b></a>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <a class="btn btn-success" href="indexUsu.html" role="button">Confirmar</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!--MODAL INICIO-->
+    <section>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Inicia sesión</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+          
+              <!-- Modal body -->
+              <div class="text-center">
+                <img class="avatar text-center" src="img/perfil.png" alt="" width="80" style="margin-top: 20px;">
+                </div>
+                <p class="text-center"><b>Ingresa tus credenciales</b></p>
+              <div class="modal-body">
+                  <div class="mt-2 input-group">
+                    <input type="email" class="form-control input_login" placeholder="ejemplocorreo@gmail.com">
+                  </div>
+                  <div class="mt-2 input-group">
+                    <input type="password" class="form-control input_login" placeholder="Contraseña" id="contra-crear"> 
+                    <div class="input-group-append"> <!--BUSCAR-->
+                        <button class="btn btn-outline-secondary" type="button"><img src="img/eye.png" alt="" width="25" class="lazy"></button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class=".text-.bg-info font-weight-bold" style="margin-top: 5cm;">¿Olvidó su contraseña?</a>
+                </div>
+
+                
+              <!-- Modal footer -->
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                <a class="btn btn-success" href="indexUsu.html" role="button">Iniciar sesión</a>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--MODAL COMPRA-->
+    <section>
+      <div class="modal fade" id="productoAgregado">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+        
+            <!-- Modal body -->
+            <div class="modal-body position-static d-block">
+              <div class="modal-content rounded-1 shadow">
+                  <div class="modal-body p-4 text-center rounded-1">
+                      <img src="img/correcto.png" width="50" alt="">
+                    <h5 class="mb-0">¡Producto agregado!</h5>
+                    <p class="mb-0">Puedes continuar agregando productos a tu carro</p>
+                  </div>
+            </div>
+  
+                  <div class="modal-footer flex-nowrap p-0">
+                    <a href="carrito.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>Ir al carro</strong></a>
+                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0" data-dismiss="modal">Seguir comprando</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+       </section>
+
+    <!--Ventana términos de uso-->
+    <section>
+        <!-- The Modal -->
+        <div class="modal fade" id="termUso">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+            
+                <!-- Modal Header -->
+            
+                <!-- Modal body -->
+                <div class="modal-body bg-primary">
+                  <div class="text-center">
+                      <img src="img/logoslogan.png" alt="" width="200">
+                  </div>
+                  <section>
+                    <div class="container-fluid bg-primary">
+                          <div class="container text-white">
+                            <h1 class="display-4" style="font-size: 30px;">1. Condiciones de uso</h1>
+                            <h2 class="lead">Las condiciones aquí citadas se aplican a todas las transacciones realizadas en www.petworld.cl, dominio del que es titular UNIDAD POR ANIMALES S.L (de aquí en adelante www.petworld.cl), sociedad constituida en Chile, con domicilio social en Av. Concha Y Toro 680, Puente Alto, Región Metropolitana.</h2>
+                            <h2 class="lead">PetWorld provee con esta Web un servicio a sus clientes. Por favor revise los términos y condiciones de venta que rigen nuestra página Web. El uso por parte del cliente de www.petworld.cl constituye un acuerdo con las siguientes condiciones generales y términos de venta. Si usted no está de acuerdo con estos términos, por favor absténgase de hacer uso de la página Web.</h2>
+                            <h2 class="lead"></h2>
+                          </div>
+                          <div class="container text-white">
+                              <h1 class="display-4" style="font-size: 30px;">2. Contenido de la página Web.</h1>
+                              <h2 class="lead">PetWorld intenta siempre que sus contenidos estén revisados y no contengan información incorrecta. En caso de producirse un error de este tipo ajeno a nuestra voluntad procederemos a corregirlo inmediatamente.</h2>
+                              <h2 class="lead">PetWorld.cl no podrá ser considerada responsable de ningún uso de la Web o de sus contenidos por parte de cada uno de los usuarios que no respete la legislación y normativas vigentes. El usuario es el único y exclusivo responsable de la comunicación de información y datos incorrectos, falsos o relativos a terceros (en caso de que estos no hayan expresado consentimiento al respecto) asi como del uso incorrecto de los mismos.</h2>
+                              <h2 class="lead">PetWorld ha hecho un esfuerzo para mostrar con tanta precisión como le ha sido posible los colores de los productos que aparecen en la Web. En cualquier caso, los colores que el usurario verá dependerán también del monitor que esté usando, por tanto PetWorld no puede garantizar la precisión del color que dicho monitor muestra.</h2>
+                          </div>
+                          <div class="container text-white">
+                            <h1 class="display-4" style="font-size: 30px;">3. Derechos de propiedad intelectual</h1>
+                            <h2 class="lead">El usuario reconoce y admite que todo el copyright, los diseños, las fotografías incluyendo los derechos de imagen, los gráficos, los sonidos, la música, video, audio, texto, las marcas registradas, y todos los demás contenidos y derechos intelectuales y materiales referentes al contenido aquí descrito, están protegidos por los derechos de autor y otros derechos sobre la propiedad intelectual de PetWorld y de los demás titulares de derechos.</h2>
+                            <h2 class="lead">Esta Web es para el uso personal del usuario y no comercial. Está prohibido copiar, modificar, distribuir, transmitir, publicar o explotar comercialmente cualquier contenido, producto o servicio de esta Web.</h2>
+                          </div>
+                          <div class="container text-white">
+                            <h1 class="display-4" style="font-size: 30px;">4. Precios y disponibilidad de productos</h1>
+                            <h2 class="lead">Los precios y la disponibilidad de los productos de www.petworld.cl son válidos salvo fin de existencias o error tipográfico. PetWorld se reserva el derecho a modificar los precios de los artículos ofertados en la Web, siendo la base de la facturación la tarifa/s en vigor en el momento que se realice el pedido. Asimismo podrá modificar los porcentajes correspondientes a los gastos de envío si fuese necesario y sin previo aviso.</h2>
+                            <h2 class="lead">PetWorld se reserva el derecho a decidir en cada momento los productos que aparezcan y que se ofrezcan a los Usuarios a través de la Web, pudiendo en cualquier caso incluir nuevos productos que se unan a los ya existentes en la Web, rigiéndose estos, salvo que se manifieste lo contrario, por lo dispuesto en las condiciones generales que se encuentren en vigor en ese momento. Así mismo, PetWorld se reserva el derecho suprimir en cualquier momento y sin necesidad de aviso, cualquiera de los elementos que ofrezca en su Web.</h2>
+                            <h2 class="lead">Los precios que aparecen incluyen el I.V.A.</h2>
+                            <h2 class="lead">Los gastos de envío para todos los pedidos dentro de la península dependerán del volúmen del o de los objeto/s comprado/s, a excepción de aquellos que superen los $40.000 de compra que serán gratuitos, salvo códigos descuento y/o otras promociones aplicables. Los gastos de envío, en su caso, se aplicarán por envío con independencia del número de artículos que contenga el mismo.</h2>
+                            <h2 class="lead">Puedes hacer pruebas y calcular el coste total de la compra sin temor. El sistema te avisará claramente antes de finalizar la misma.</h2>
+                            <h2 class="lead">Los pedidos se atenderán por riguroso orden de recepción.</h2>
+                            <h2 class="lead">En caso de finalizar las existencias de un producto solicitado, se cancelará del pedido del cliente previo aviso.</h2>
+                            <h2 class="lead">Salvo error, se considerarán disponibles en stock todos los artículos visibles en www.petworld.cl, salvo que se indique como “Actualmente Fuera de Stock” en la ficha de producto.</h2>
+                          </div>
+                          <div class="container text-white">
+                            <h1 class="display-4" style="font-size: 30px;">5. Política de Envíos</h1>
+                            <h2 class="lead">Los envíos se realizaran por personal de PetWorld dentro de Santiago. Para localidades fuera de la región, será encargado por terceros.</h2>
+                            <h2 class="lead">El plazo de entrega se corresponde con los días que transcurren desde que se ha finalizado la elaboración del pedido hasta que el cliente recibe el mismo.</h2>
+                            <h2 class="lead">Los plazos de entrega salvo fuerza mayor (por causas ajenas a nuestra competencia) son en Chile: de 3 a 7 días laborables en los envíos normales y en el caso de entregas urgentes 48-72 horas, son dos días laborables si no hay problemas con la dirección facilitada.</h2>
+                            <h2 class="lead"></h2>
+                          </div>
+                          <div class="text-center">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                          </div>
+                      </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Suscripción-->
+    <section>
+      <div class="modal fade" id="suscrip">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+      
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container">
+                    <main>
+                      <div class="py-5 text-center">
+                        <img class="d-block mx-auto mb-4" src="img/logo2.png" alt="" width="200">
+                        <h2>Formulario de suscripción</h2>
+                        <div class="container">
+                            <ul style="list-style: none;">
+                                <li><h2 class="lead">Fundación sin fines de lucro dedicada al apoyo incondicional de felinos y caninos por igual, sin dejar excenta cualquier especie animal.</h2></li>
+                                <li><h2 class="lead">Nuestro objetivo como fundación es recaudar dinero mensualmente para donarlo a animales necesitados de todas las especies y razas</h2></li>
+                                <li><h2 class="lead"><b>Tu suscripción puede salvar vidas de miles de mascotas abandonadas.</b></h2></li>
+                            </ul>
+                              <div class="container text-center">
+                               <h2 class="lead"><b>El valor mensual de la suscripción tiene un costo de $10.000 (sin valores agregados) y gozarás de descuentos por cada producto que compres. Mientras más productos tengas en tu carro, más alto será el descuento.</b></h2>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                        </div>
+                        <div class="container">
+                          <h4 class="mb-3">Ingresa los datos solicitados</h4>
+                          <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                              <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                  Se requiere un nombre válido.
+                                </div>
+                              </div>
+                  
+                              <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Apellido/s</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Se requiere apellido/s válido.
+                                </div>
+                              </div>
+                  
+                              <div class="col-12" style="padding: 15px;">
+                                <label for="Nombreusuario" class="form-label">Nombre de usuario</label>
+                                <div class="input-group has-validation">
+                                  <span class="input-group-text">@</span>
+                                  <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                                <div class="invalid-feedback">
+                                    Se requiere un nombre de usuario.
+                                  </div>
+                                </div>
+                              </div>
+                  
+                              <div class="col-12" style="padding: 10px;">
+                                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+                                <div class="invalid-feedback">
+                                  Ingrese correo válido para recibir newsletters.
+                                </div>
+                              </div>       
+    
+                            </div>
+                            <hr class="my-4">
+                  
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="save-info">
+                              <label class="form-check-label" for="save-info">Guardar información</label>
+                            </div>
+                  
+                            <hr class="my-4">
+                  
+                            <h4 class="mb-3">Forma de pago</h4>
+                  
+                            <div class="my-3">
+                              <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                              </div>
+                              <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="debit">Tarjeta de débito</label>
+                              </div>
+                              <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                              </div>
+                            </div>
+                  
+                            <div class="row gy-3">
+                              <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Nombre completo como figura en la tarjeta</small>   
+                                <div class="invalid-feedback">
+                                  Se requiere nombre en la tarjeta
+                                </div>
+                              </div>
+                  
+                              <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Número de tarjeta de crédito</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Se requiere número de la tarjeta
+                                </div>
+                              </div>
+                  
+                              <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Expira</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <div class="invalid-feedback">
+                                  Se requiere datos de expiración
+                                </div>
+                              </div>
+                  
+                              <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                  Código de seguridad requerido
+                                </div>
+                              </div>
+    
+                              <div class="col-md-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="save-info2">
+                                    <label class="form-check-label" for="save-info2">Guardar información</label>
+                                  </div>
+                                  <section>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="termUso">
+                                        <p><b>Acepto</b><a href="#" data-toggle="modal" data-target="#termUso"> <b>términos y condiciones de uso.</b></a>
+                                      </div>
+                              </div>
+                                <button class="btn btn-primary" type="submit"><a href="indexSuscrip.html" class="text-white">Aceptar y continuar</a></button>
+                            </div>
+                  
+                            <hr class="my-4">
+                            <button class="w-100 btn btn-danger btn-lg" data-dismiss="modal">Cancelar y volver</button>
+                          </form>
+                        </div>
+                      </div>
+                    </main>
+            </div>
+          </div>
+        </div>
+       </section>
+  
+    <!--FOOTER-->
+    <div class="container">
+      <footer class="row row-cols-5 py-5 my-5 border-top">
+        <div class="col">
+          <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
+        </div>
+    
+        <div class="col"></div>
+    
+        <div class="col text-center">
+            <a href="indexUsu.html"><img src="img/logoslogan.png" alt="" width="150"></a>
+        </div>
+    
+        <div class="col"></div>
+    
+        <div class="col">
+          <h5>Secciones</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Contáctanos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Redes Sociales</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso">Políticas y términos</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
