@@ -17,7 +17,7 @@
             <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
             <h4 class="text-white">Comprador12_</h4>
             <img src="img/usuario.png" width="100" alt="">
-            <a href="index.html"><p><small>Cerrar Sesión</small></p></a>
+            <a href="index.html" data-toggle="tooltip" title="¡Hasta pronto!"><p><small>Cerrar Sesión</small></p></a>
             </div>
           </div>
           <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
@@ -26,7 +26,7 @@
                 <li><p class="text-white">Nombre: Alejandro Rios</li> 
                 <li><p class="text-white">Dirección: Av. Concha y Toro 755</li> 
                 <h1 class="text-white" style="font-size: 20px">Suscripción</h1>
-              <li><a href="#" class="" data-toggle="modal" data-target="#suscrip">Estado de suscripción</a></li>
+              <li><a href="#" class="" data-toggle="modal" data-target="#suscrip" data-toggle="tooltip" title="¡Suscripción activa!">Estado de suscripción</a></li>
             </ul>
           </div>
         </div>
@@ -36,14 +36,13 @@
       <div class="container-fluid d-flex justify-content-between">
         <a href="indexSuscrip.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
         <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Usuario Premium!</strong></h1>
-        <a href="carritoPremium.html" style="margin-left: 1000px;"><img src="img/carroWhite.png" alt="" width="50"></a>
-        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
+        <a href="carritoPremium.html" style="margin-left: 1000px;"><img src="img/carroWhite.png" alt="" width="50" data-toggle="tooltip" title="Carrito de compras"></a>
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;" data-toggle="tooltip" title="Click para expandir propiedades del usuario">
         <!--Acá va el nombre de la caja--> <img src="img/usuario.png" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
         </button>
-  </header>
-  <!--NAV-->
-  <section>
-    
+</header>
+<!--NAV-->
+<section>
     <nav class="navbar navbar-expand-sm justify-content-center" style="height: 50px; background-color: rgb(144, 74, 209)";>
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -82,7 +81,7 @@
             <button class="btn text-white" type="submit" style="font-size: 15px; background: rgb(53, 165, 92);">Buscar</button>
           </form>
       </nav>
-  </section>
+</section>
 
     <!--SECCIÓN 1-->
     <div class="container-fluid justify-content-between" 
@@ -318,150 +317,225 @@
     
 
 
-    <!--MODAL COMPRA-->
-    <section>
-      <div class="modal fade" id="productoAgregado">
-        <div class="modal-dialog">
-          <div class="modal-content">
-          
+  <!--MODAL COMPRA-->
+  <section>
+    <div class="modal fade" id="productoAgregado">
+      <div class="modal-dialog">
+        <div class="modal-content">
         
-            <!-- Modal body -->
-            <div class="modal-body position-static d-block">
-              <div class="modal-content rounded-1 shadow">
-                  <div class="modal-body p-4 text-center rounded-1">
-                      <img src="img/correcto.png" width="50" alt="">
-                    <h5 class="mb-0">¡Producto agregado!</h5>
-                    <p class="mb-0">Puedes continuar agregando productos a tu carro</p>
-                  </div>
-            </div>
-  
-                  <div class="modal-footer flex-nowrap p-0">
-                    <a href="carritoPremium.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>Ir al carro</strong></a>
-                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0" data-dismiss="modal">Seguir comprando</button>
-                  </div>
+      
+          <!-- Modal body -->
+          <div class="modal-body position-static d-block">
+            <div class="modal-content rounded-1 shadow">
+                <div class="modal-body p-4 text-center rounded-1">
+                    <img src="img/correcto.png" width="50" alt="">
+                  <h5 class="mb-0">¡Producto agregado!</h5>
+                  <p class="mb-0">Puedes continuar agregando productos a tu carro</p>
+                </div>
+          </div>
+
+                <div class="modal-footer flex-nowrap p-0">
+                  <a href="carritoPremium.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>Ir al carro</strong></a>
+                  <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0" data-dismiss="modal">Seguir comprando</button>
                 </div>
               </div>
             </div>
-  
           </div>
+
         </div>
       </div>
-       </section>
-  
-      <!--Ventana términos de uso-->
-      <section>
-          <!-- The Modal -->
-          <div class="modal fade" id="termUso">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-              
-                  <!-- Modal Header -->
-              
-                  <!-- Modal body -->
-                  <div class="modal-body bg-primary">
-                    <div class="text-center">
-                        <img src="img/logoslogan.png" alt="" width="200">
-                    </div>
-                    <section>
-                      <div class="container-fluid bg-primary">
-                            <div class="container text-white">
-                              <h1 class="display-4" style="font-size: 30px;">1. Condiciones de uso</h1>
-                              <h2 class="lead">Las condiciones aquí citadas se aplican a todas las transacciones realizadas en www.petworld.cl, dominio del que es titular UNIDAD POR ANIMALES S.L (de aquí en adelante www.petworld.cl), sociedad constituida en Chile, con domicilio social en Av. Concha Y Toro 680, Puente Alto, Región Metropolitana.</h2>
-                              <h2 class="lead">PetWorld provee con esta Web un servicio a sus clientes. Por favor revise los términos y condiciones de venta que rigen nuestra página Web. El uso por parte del cliente de www.petworld.cl constituye un acuerdo con las siguientes condiciones generales y términos de venta. Si usted no está de acuerdo con estos términos, por favor absténgase de hacer uso de la página Web.</h2>
-                              <h2 class="lead"></h2>
-                            </div>
-                            <div class="container text-white">
-                                <h1 class="display-4" style="font-size: 30px;">2. Contenido de la página Web.</h1>
-                                <h2 class="lead">PetWorld intenta siempre que sus contenidos estén revisados y no contengan información incorrecta. En caso de producirse un error de este tipo ajeno a nuestra voluntad procederemos a corregirlo inmediatamente.</h2>
-                                <h2 class="lead">PetWorld.cl no podrá ser considerada responsable de ningún uso de la Web o de sus contenidos por parte de cada uno de los usuarios que no respete la legislación y normativas vigentes. El usuario es el único y exclusivo responsable de la comunicación de información y datos incorrectos, falsos o relativos a terceros (en caso de que estos no hayan expresado consentimiento al respecto) asi como del uso incorrecto de los mismos.</h2>
-                                <h2 class="lead">PetWorld ha hecho un esfuerzo para mostrar con tanta precisión como le ha sido posible los colores de los productos que aparecen en la Web. En cualquier caso, los colores que el usurario verá dependerán también del monitor que esté usando, por tanto PetWorld no puede garantizar la precisión del color que dicho monitor muestra.</h2>
-                            </div>
-                            <div class="container text-white">
-                              <h1 class="display-4" style="font-size: 30px;">3. Derechos de propiedad intelectual</h1>
-                              <h2 class="lead">El usuario reconoce y admite que todo el copyright, los diseños, las fotografías incluyendo los derechos de imagen, los gráficos, los sonidos, la música, video, audio, texto, las marcas registradas, y todos los demás contenidos y derechos intelectuales y materiales referentes al contenido aquí descrito, están protegidos por los derechos de autor y otros derechos sobre la propiedad intelectual de PetWorld y de los demás titulares de derechos.</h2>
-                              <h2 class="lead">Esta Web es para el uso personal del usuario y no comercial. Está prohibido copiar, modificar, distribuir, transmitir, publicar o explotar comercialmente cualquier contenido, producto o servicio de esta Web.</h2>
-                            </div>
-                            <div class="container text-white">
-                              <h1 class="display-4" style="font-size: 30px;">4. Precios y disponibilidad de productos</h1>
-                              <h2 class="lead">Los precios y la disponibilidad de los productos de www.petworld.cl son válidos salvo fin de existencias o error tipográfico. PetWorld se reserva el derecho a modificar los precios de los artículos ofertados en la Web, siendo la base de la facturación la tarifa/s en vigor en el momento que se realice el pedido. Asimismo podrá modificar los porcentajes correspondientes a los gastos de envío si fuese necesario y sin previo aviso.</h2>
-                              <h2 class="lead">PetWorld se reserva el derecho a decidir en cada momento los productos que aparezcan y que se ofrezcan a los Usuarios a través de la Web, pudiendo en cualquier caso incluir nuevos productos que se unan a los ya existentes en la Web, rigiéndose estos, salvo que se manifieste lo contrario, por lo dispuesto en las condiciones generales que se encuentren en vigor en ese momento. Así mismo, PetWorld se reserva el derecho suprimir en cualquier momento y sin necesidad de aviso, cualquiera de los elementos que ofrezca en su Web.</h2>
-                              <h2 class="lead">Los precios que aparecen incluyen el I.V.A.</h2>
-                              <h2 class="lead">Los gastos de envío para todos los pedidos dentro de la península dependerán del volúmen del o de los objeto/s comprado/s, a excepción de aquellos que superen los $40.000 de compra que serán gratuitos, salvo códigos descuento y/o otras promociones aplicables. Los gastos de envío, en su caso, se aplicarán por envío con independencia del número de artículos que contenga el mismo.</h2>
-                              <h2 class="lead">Puedes hacer pruebas y calcular el coste total de la compra sin temor. El sistema te avisará claramente antes de finalizar la misma.</h2>
-                              <h2 class="lead">Los pedidos se atenderán por riguroso orden de recepción.</h2>
-                              <h2 class="lead">En caso de finalizar las existencias de un producto solicitado, se cancelará del pedido del cliente previo aviso.</h2>
-                              <h2 class="lead">Salvo error, se considerarán disponibles en stock todos los artículos visibles en www.petworld.cl, salvo que se indique como “Actualmente Fuera de Stock” en la ficha de producto.</h2>
-                            </div>
-                            <div class="container text-white">
-                              <h1 class="display-4" style="font-size: 30px;">5. Política de Envíos</h1>
-                              <h2 class="lead">Los envíos se realizaran por personal de PetWorld dentro de Santiago. Para localidades fuera de la región, será encargado por terceros.</h2>
-                              <h2 class="lead">El plazo de entrega se corresponde con los días que transcurren desde que se ha finalizado la elaboración del pedido hasta que el cliente recibe el mismo.</h2>
-                              <h2 class="lead">Los plazos de entrega salvo fuerza mayor (por causas ajenas a nuestra competencia) son en Chile: de 3 a 7 días laborables en los envíos normales y en el caso de entregas urgentes 48-72 horas, son dos días laborables si no hay problemas con la dirección facilitada.</h2>
-                              <h2 class="lead"></h2>
-                            </div>
-                            <div class="text-center">
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </section>
+    </div>
+  </section>
+
+  <!--Ventana términos de uso-->
+  <section>
+        <!-- The Modal -->
+        <div class="modal fade" id="termUso">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+            
+                <!-- Modal Header -->
+            
+                <!-- Modal body -->
+                <div class="modal-body bg-primary">
+                  <div class="text-center">
+                      <img src="img/logoslogan.png" alt="" width="200">
                   </div>
+                  <section>
+                    <div class="container-fluid bg-primary">
+                          <div class="container text-white">
+                            <h1 class="display-4" style="font-size: 30px;">1. Condiciones de uso</h1>
+                            <h2 class="lead">Las condiciones aquí citadas se aplican a todas las transacciones realizadas en www.petworld.cl, dominio del que es titular UNIDAD POR ANIMALES S.L (de aquí en adelante www.petworld.cl), sociedad constituida en Chile, con domicilio social en Av. Concha Y Toro 680, Puente Alto, Región Metropolitana.</h2>
+                            <h2 class="lead">PetWorld provee con esta Web un servicio a sus clientes. Por favor revise los términos y condiciones de venta que rigen nuestra página Web. El uso por parte del cliente de www.petworld.cl constituye un acuerdo con las siguientes condiciones generales y términos de venta. Si usted no está de acuerdo con estos términos, por favor absténgase de hacer uso de la página Web.</h2>
+                            <h2 class="lead"></h2>
+                          </div>
+                          <div class="container text-white">
+                              <h1 class="display-4" style="font-size: 30px;">2. Contenido de la página Web.</h1>
+                              <h2 class="lead">PetWorld intenta siempre que sus contenidos estén revisados y no contengan información incorrecta. En caso de producirse un error de este tipo ajeno a nuestra voluntad procederemos a corregirlo inmediatamente.</h2>
+                              <h2 class="lead">PetWorld.cl no podrá ser considerada responsable de ningún uso de la Web o de sus contenidos por parte de cada uno de los usuarios que no respete la legislación y normativas vigentes. El usuario es el único y exclusivo responsable de la comunicación de información y datos incorrectos, falsos o relativos a terceros (en caso de que estos no hayan expresado consentimiento al respecto) asi como del uso incorrecto de los mismos.</h2>
+                              <h2 class="lead">PetWorld ha hecho un esfuerzo para mostrar con tanta precisión como le ha sido posible los colores de los productos que aparecen en la Web. En cualquier caso, los colores que el usurario verá dependerán también del monitor que esté usando, por tanto PetWorld no puede garantizar la precisión del color que dicho monitor muestra.</h2>
+                          </div>
+                          <div class="container text-white">
+                            <h1 class="display-4" style="font-size: 30px;">3. Derechos de propiedad intelectual</h1>
+                            <h2 class="lead">El usuario reconoce y admite que todo el copyright, los diseños, las fotografías incluyendo los derechos de imagen, los gráficos, los sonidos, la música, video, audio, texto, las marcas registradas, y todos los demás contenidos y derechos intelectuales y materiales referentes al contenido aquí descrito, están protegidos por los derechos de autor y otros derechos sobre la propiedad intelectual de PetWorld y de los demás titulares de derechos.</h2>
+                            <h2 class="lead">Esta Web es para el uso personal del usuario y no comercial. Está prohibido copiar, modificar, distribuir, transmitir, publicar o explotar comercialmente cualquier contenido, producto o servicio de esta Web.</h2>
+                          </div>
+                          <div class="container text-white">
+                            <h1 class="display-4" style="font-size: 30px;">4. Precios y disponibilidad de productos</h1>
+                            <h2 class="lead">Los precios y la disponibilidad de los productos de www.petworld.cl son válidos salvo fin de existencias o error tipográfico. PetWorld se reserva el derecho a modificar los precios de los artículos ofertados en la Web, siendo la base de la facturación la tarifa/s en vigor en el momento que se realice el pedido. Asimismo podrá modificar los porcentajes correspondientes a los gastos de envío si fuese necesario y sin previo aviso.</h2>
+                            <h2 class="lead">PetWorld se reserva el derecho a decidir en cada momento los productos que aparezcan y que se ofrezcan a los Usuarios a través de la Web, pudiendo en cualquier caso incluir nuevos productos que se unan a los ya existentes en la Web, rigiéndose estos, salvo que se manifieste lo contrario, por lo dispuesto en las condiciones generales que se encuentren en vigor en ese momento. Así mismo, PetWorld se reserva el derecho suprimir en cualquier momento y sin necesidad de aviso, cualquiera de los elementos que ofrezca en su Web.</h2>
+                            <h2 class="lead">Los precios que aparecen incluyen el I.V.A.</h2>
+                            <h2 class="lead">Los gastos de envío para todos los pedidos dentro de la península dependerán del volúmen del o de los objeto/s comprado/s, a excepción de aquellos que superen los $40.000 de compra que serán gratuitos, salvo códigos descuento y/o otras promociones aplicables. Los gastos de envío, en su caso, se aplicarán por envío con independencia del número de artículos que contenga el mismo.</h2>
+                            <h2 class="lead">Puedes hacer pruebas y calcular el coste total de la compra sin temor. El sistema te avisará claramente antes de finalizar la misma.</h2>
+                            <h2 class="lead">Los pedidos se atenderán por riguroso orden de recepción.</h2>
+                            <h2 class="lead">En caso de finalizar las existencias de un producto solicitado, se cancelará del pedido del cliente previo aviso.</h2>
+                            <h2 class="lead">Salvo error, se considerarán disponibles en stock todos los artículos visibles en www.petworld.cl, salvo que se indique como “Actualmente Fuera de Stock” en la ficha de producto.</h2>
+                          </div>
+                          <div class="container text-white">
+                            <h1 class="display-4" style="font-size: 30px;">5. Política de Envíos</h1>
+                            <h2 class="lead">Los envíos se realizaran por personal de PetWorld dentro de Santiago. Para localidades fuera de la región, será encargado por terceros.</h2>
+                            <h2 class="lead">El plazo de entrega se corresponde con los días que transcurren desde que se ha finalizado la elaboración del pedido hasta que el cliente recibe el mismo.</h2>
+                            <h2 class="lead">Los plazos de entrega salvo fuerza mayor (por causas ajenas a nuestra competencia) son en Chile: de 3 a 7 días laborables en los envíos normales y en el caso de entregas urgentes 48-72 horas, son dos días laborables si no hay problemas con la dirección facilitada.</h2>
+                            <h2 class="lead"></h2>
+                          </div>
+                          <div class="text-center">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                          </div>
+                      </div>
+                  </section>
                 </div>
               </div>
-          </div>
-      </section>
+            </div>
+        </div>
+  </section>
+
+  <!--Suscripción-->
+  <section>
+  <div class="modal fade" id="suscrip">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
   
-      <!--Suscripción-->
-     <section>
-    <div class="modal fade" id="suscrip">
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="modal-body position-static d-block">
+                <div class="modal-content rounded-1 shadow">
+                    <div class="modal-body p-4 text-center rounded-1">
+                        <img src="img/correcto.png" width="50" alt="">
+                      <h5 class="mb-0">¡Tu suscripción está activa!</h5>
+                      <p class="mb-0">Gracias por apoyarnos, puedes cancelar tu suscripción en cualquier momento</p>
+                    </div>
+              </div>
+              <div class="modal-footer flex-nowrap p-0">
+                <a href="" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right" data-dismiss="modal"><strong>¡Gracias!</strong></a>
+                <a href="indexUsu.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0">Cancelar suscripción</a>
+              </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL REDES SOCIALES -->
+  <section>
+    <!-- The Modal -->
+    <div class="modal fade" id="social">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">¡Síguenos!</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body justify-content-between">
+            <h1 class="lead text-center" style="font-size: 30px; margin-bottom: 20px;">Búscanos en nuestras diversas plataformas</h1>
+            <ul>
+              <li class="lead">INSTAGRAM <a href="">@PetWorld</a><img src="img/contact/IG.png" width="60" alt="" style="margin-left: 110px;"></li>
+              <li class="lead">FACEBOOK <a href="">@Fundación PetWorld</a><img src="img/contact/FACE.png" width="60" alt="" style="margin-left: 26px;"></li>
+              <li class="lead">TWITTER <a href="">@PetWorld_Info</a><img src="img/contact/TW.png" width="60" alt="" style="margin-left: 96px;"></li>
+              <li class="lead">WHATSAPP <a href="">+569 4998 8563</a><img src="img/contact/WSP.png" width="60" alt="" style="margin-left: 73px;"></li>
+            </ul>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!--DESARROLLADORES-->
+  <section>
+          <!-- The Modal -->
+    <div class="modal fade" id="desarr">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
     
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Desarrolladores</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
     
           <!-- Modal body -->
-          <div class="modal-body">
-              <div class="modal-body position-static d-block">
-                  <div class="modal-content rounded-1 shadow">
-                      <div class="modal-body p-4 text-center rounded-1">
-                          <img src="img/correcto.png" width="50" alt="">
-                        <h5 class="mb-0">¡Tu suscripción está activa!</h5>
-                        <p class="mb-0">Gracias por apoyarnos, puedes cancelar tu suscripción en cualquier momento</p>
-                      </div>
-                </div>
-                <div class="modal-footer flex-nowrap p-0">
-                  <a href="" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right" data-dismiss="modal"><strong>¡Gracias!</strong></a>
-                  <a href="indexUsu.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0">Cancelar suscripción</a>
-                </div> 
+          <div class="modal-body text-center">
+            <h1 class="lead text-center" style="font-size: 25px;">Conoce a nuestros desarrolladores</h1>
+            <ul style="list-style: none;">
+              <li class="lead" style="font-size: 20px;">Alan Zamorano <a href=""> Programador / Director de proyecto</a></li>
+              <li class="lead" style="font-size: 20px;">Felipe Díaz <a href="">Programador / Diseñador</a></li>
+              <li class="lead" style="font-size: 20px;">Vanessa Jeldres <a href="">Programador / Front-End</a></li>
+            </ul>
+            <img src="img/cat-coding.gif" alt="" class="text-center">
           </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+    
         </div>
       </div>
-     </section>
-  
-    <!--FOOTER-->
-    <div class="container">
-      <footer class="row row-cols-5 py-5 my-5 border-top">
-        <div class="col">
-          <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
-        </div>
-    
-        <div class="col"></div>
-    
-        <div class="col text-center">
-            <a href="indexUsu.html"><img src="img/logoslogan.png" alt="" width="150"></a>
-        </div>
-    
-        <div class="col"></div>
-    
-        <div class="col">
-          <h5>Secciones</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Contáctanos</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Redes Sociales</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso">Políticas y términos</a></li>
-          </ul>
-        </div>
-      </footer>
     </div>
+  </section>
+
+  <!--FOOTER-->
+  <div class="container">
+  <footer class="row row-cols-5 py-5 my-5 border-top">
+    <div class="col col-sm col-lg">
+      <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
+    </div>
+
+    <div class="col col-sm col-lg"></div>
+
+    <div class="col col-sm col-lg text-center">
+        <a href="index.html"><img src="img/logoslogan.png" alt="" width="150"></a>
+    </div>
+
+    <div class="col"></div>
+
+    <div class="col col-sm col-lg">
+      <h5>Secciones</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted" data-toggle="tooltip" title="Envíanos un mensaje si tienes un problema o duda">Contáctanos</a></li>
+        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#social" data-toggle="tooltip" title="¡Búscanos!">Redes Sociales</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#desarr" data-toggle="tooltip" title="Conoce a quienes dieron vida a este proyecto">Desarrolladores</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso" data-toggle="tooltip" title="Usos y términos de PetWorld">Políticas y términos</a></li>
+      </ul>
+    </div>
+  </footer>
+  </div>
+
+  <!--TOOLTIP-->
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
 
 
 <!-- jQuery library -->

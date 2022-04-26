@@ -10,9 +10,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <div class="container-fluid">
-
-  </div>
     <header>
       <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
         <div class="container">
@@ -62,7 +59,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <div class="dropdown">
-                  <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);">
+                  <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);" disabled data-toggle="tooltip" title="Debes tener una cuenta activa para activar filtros de búsqueda">
                     Perro
                   </button>
                   <div class="dropdown-menu">
@@ -78,7 +75,7 @@
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                  <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);">
+                  <button type="button" class="btn dropdown-toggle btn-sm text-white" data-toggle="dropdown" style="background-color: rgb(104, 55, 150);" disabled data-toggle="tooltip" title="Debes tener una cuenta activa para activar filtros de búsqueda">
                     Gato
                   </button>
                   <div class="dropdown-menu">
@@ -92,8 +89,8 @@
             </li>
           </ul>
           <form class="form-inline" action="#" style="margin-left: 100px;">
-              <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
-              <button class="btn text-white" type="submit" style="font-size: 15px; background: rgb(53, 165, 92);">Buscar</button>
+              <input class="form-control mr-sm-2" type="text" placeholder="Buscar" disabled data-toggle="tooltip" title="Debes tener una cuenta activa para realizar búsquedas"> 
+              <button class="btn text-white" type="submit" style="font-size: 15px; background: rgb(53, 165, 92);" disabled data-toggle="tooltip" title="Debes tener una cuenta activa para realizar búsquedas">Buscar</button>
             </form>
         </nav>
     </section>
@@ -443,7 +440,6 @@
     </div>
     </section>
 
-
     <!--MODAL INICIO-->
     <section>
         <!-- The Modal -->
@@ -468,12 +464,12 @@
                   </div>
                   <div class="mt-2 input-group">
                     <input type="password" class="form-control input_login" placeholder="Contraseña" id="contra-crear"> 
-                    <div class="input-group-append"> <!--BUSCAR-->
+                    <div class="input-group-append">
                         <button class="btn btn-outline-secondary" type="button"><img src="img/eye.png" alt="" width="25" class="lazy"></button>
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="#" class=".text-.bg-info font-weight-bold" style="margin-top: 5cm;">¿Olvidó su contraseña?</a>
+                    <a href="#" class=".text-.bg-info font-weight-bold" data-toggle="modal" data-dismiss="modal" data-target="#pass" style="margin-top: 5cm;">¿Olvidó su contraseña?</a>
                 </div>
 
                 
@@ -490,7 +486,6 @@
 
     <!--MODAL COMPRA-->
     <section>
-    <!-- The Modal -->
     <div class="modal fade" id="productoAgregado">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -502,18 +497,113 @@
                 <div class="modal-body p-4 text-center rounded-1">
                     <img src="img/error.png" width="50" alt="">
                   <h5 class="mb-0">¡No tienes una cuenta!</h5>
-                  <p class="mb-0">Para agregar productos al carro inicia sesión o crea una cuenta, <a href="" data-toggle="modal" data-target="#myModal1">¡es gratis! </a> </p>
-                  <button type="button" class="btn text-white" data-dismiss="modal" style="font-size: 15px; background: rgb(13, 16, 14); margin-top: 25px;">Cerrar</button>
+                  <p class="mb-0">Para agregar productos al carro inicia sesión o crea una cuenta, <a href="" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">¡es gratis! </a> </p>
+                  <button type="button" class="btn text-white" data-dismiss="modal" style="font-size: 15px; background: rgb(210, 37, 11); margin-top: 25px;">Cerrar</button>
                 </div>
-          </div>
               </div>
+          </div>
+    
             </div>
           </div>
+        </div>
+     </section>
+    
+    <!-- MODAL REDES SOCIALES -->
+    <section>
+<!-- The Modal -->
+<div class="modal fade" id="social">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">¡Síguenos!</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body justify-content-between">
+        <h1 class="lead text-center" style="font-size: 30px; margin-bottom: 20px;">Búscanos en nuestras diversas plataformas</h1>
+        <ul>
+          <li class="lead">INSTAGRAM <a href="">@PetWorld</a><img src="img/contact/IG.png" width="60" alt="" style="margin-left: 110px;"></li>
+          <li class="lead">FACEBOOK <a href="">@Fundación PetWorld</a><img src="img/contact/FACE.png" width="60" alt="" style="margin-left: 26px;"></li>
+          <li class="lead">TWITTER <a href="">@PetWorld_Info</a><img src="img/contact/TW.png" width="60" alt="" style="margin-left: 96px;"></li>
+          <li class="lead">WHATSAPP <a href="">+569 4998 8563</a><img src="img/contact/WSP.png" width="60" alt="" style="margin-left: 73px;"></li>
+        </ul>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!--DESARROLLADORES-->
+    <section>
+      <!-- The Modal -->
+<div class="modal fade" id="desarr">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Desarrolladores</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body text-center">
+        <h1 class="lead text-center" style="font-size: 25px;">Conoce a nuestros desarrolladores</h1>
+        <ul style="list-style: none;">
+          <li class="lead" style="font-size: 20px;">Alan Zamorano <a href=""> Programador / Director de proyecto</a></li>
+          <li class="lead" style="font-size: 20px;">Felipe Díaz <a href="">Programador / Diseñador</a></li>
+          <li class="lead" style="font-size: 20px;">Vanessa Jeldres <a href="">Programador / Front-End</a></li>
+        </ul>
+        <img src="img/cat-coding.gif" alt="" class="text-center">
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!--CONTRA-->
+    <section>
+<!-- The Modal -->
+<div class="modal fade" id="pass">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+
+      <!-- Modal body -->
+      <div class="modal-body text-center">
+        <h1 class="lead" style="font-size: 25px;">Recuperar contraseña</h1>
+        <h2 class="lead" style="font-size: 20px;">Ingrese su correo</h2>
+        <div class="mt-2 input-group">
+          <input type="email" class="form-control input_login" placeholder="ejemplocorreo@gmail.com">
         </div>
       </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-dismiss="modal" data-target="#myModal1">Volver</button>
+        <button class="btn text-white" type="submit" style="font-size: 15px; background: rgb(53, 165, 92);" data-toggle="tooltip" title="Enviar correo de recuperación">Confirmar</button>
+      </div>
+
     </div>
-     </section>
+  </div>
+</div>
+    </section>
 
     <!--Ventana términos de uso-->
     <section>
@@ -580,30 +670,36 @@
     <!--FOOTER-->
     <div class="container">
   <footer class="row row-cols-5 py-5 my-5 border-top">
-    <div class="col">
+    <div class="col col-sm col-lg">
       <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
     </div>
 
-    <div class="col"></div>
+    <div class="col col-sm col-lg"></div>
 
-    <div class="col text-center">
+    <div class="col col-sm col-lg text-center">
         <a href="index.html"><img src="img/logoslogan.png" alt="" width="150"></a>
     </div>
 
     <div class="col"></div>
 
-    <div class="col">
+    <div class="col col-sm col-lg">
       <h5>Secciones</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Contáctanos</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Redes Sociales</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso">Políticas y términos</a></li>
+        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted" data-toggle="tooltip" title="Envíanos un mensaje si tienes un problema o duda">Contáctanos</a></li>
+        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#social" data-toggle="tooltip" title="¡Búscanos!">Redes Sociales</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#desarr" data-toggle="tooltip" title="Conoce a quienes dieron vida a este proyecto">Desarrolladores</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso" data-toggle="tooltip" title="Usos y términos de PetWorld">Políticas y términos</a></li>
       </ul>
     </div>
   </footer>
 </div>
 
+<!--TOOLTIP-->
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
 
 <!-- jQuery library -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARRITO</title>
+    <title>HISTORIALPREM</title>
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 <body>
@@ -53,94 +53,17 @@
         </ul>
       </nav>
   </section>
-
+    
       <div class="container" style="max-width: 1300px;">
         <main>
             <div class="py-5 text-center">
-                <h2>Carrito de compras</h2>
+                <h2>Historial de Búsqueda</h2>
                 <p class="text-muted">&copy; PetWorld 2022</p>
             </div>
-            <div class="row">
-              <div class="col-md-5 col-lg-4 order-md-last">
-                <h4 class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="">Total compra</span>
-                  <span class="badge rounded-pill text-white" style="background-color:rgb(105, 32, 173);">3</span>
-                </h4>
-                <ul class="list-group mb-3">    <!--Lista de productos en el carro-->
-                  <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                      <h6 class="my-0">Bandana "electric"</h6>
-                      <small class="text-muted">Cantidad x1</small>
-                    </div>
-                    <span class="text-muted">$3.591</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                      <h6 class="my-0">Placa Meow</h6>
-                      <small class="text-muted">Cantidad x1</small>
-                    </div>
-                    <span class="text-muted">$1.790</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                      <h6 class="my-0">Correa Rayas</h6>
-                      <small class="text-muted">x1</small>
-                    </div>
-                    <span class="text-muted">$4.240</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between" style="background-color: rgb(235, 209, 209);">
-                    <div class="">
-                      <h6 class="my-0">Subtotal</h6>
-                    </div>
-                    <span class="">$9.621</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between bg-light">
-                    <div class="text-success">
-                      <h6 class="my-0">Código Promocional</h6>
-                      <small>CODIGOEJEMPLO</small>
-                    </div>
-                    <span class="text-success">−$5.000</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between bg-light">
-                    <div class="text-success">
-                      <h6 class="my-0">DCTOPREMIUM</h6>
-                      <small>5% x 3 productos</small>
-                    </div>
-                    <span class="text-success">-230</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between">
-                    <span>Total (CLP)</span>
-                    <strong>$4.391</strong>
-                  </li>
-                </ul>
-                <!--fuera de la lista para quedar en línea pero en casilla diferente-->
-                <form class="card p-2">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="CÓDIGO">
-                    <button type="submit" class="btn btn-secondary">Canjear</button>
-                  </div>
-                </form>
-                <div class="text-center mt-3">
-                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#confirmarAccion" style="width:405px;">Pagar</button>
-                </div>
-              </div> <!--Cierre row lateral-->
-              
-              <div class="col-md-7 col-lg-8">
-                <h4 class="mb-3"><b>Productos</b></h4>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="select-all">
-                    <label class="form-check-label" for="select-all"><small>Seleccionar todo</small></label>
-                </div>
-                  
-                   <!--Lista de productos en el carro-->
+                   <!--Lista de productos-->
                <ul class="list-group">   
                   <li class="list-group-item d-flex justify-content-between">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="select-1" style="margin-top: 40px;">
-                        <label class="form-check-label" for="select-1">
-                            <img src="img/bandanas/10_bandana_rayos.png" width="100" alt="">
-                        </label>
-                    </div>
+                    <img src="img/bandanas/10_bandana_rayos.png" width="100" alt="">
                     <!--Descripción producto-->
                     <h6>Bandana Electric</h6>
                     <small class="text-muted">Color: rojo</small>
@@ -149,12 +72,7 @@
 
                   <!--PRODUCTO 2-->
                   <li class="list-group-item d-flex justify-content-between">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="select-2" style="margin-top: 40px;">
-                        <label class="form-check-label" for="select-2">
-                            <img src="img/placas/10_placa_mmeow.png" width="100" alt="">
-                        </label>
-                    </div>
+                    <img src="img/placas/10_placa_mmeow.png" width="100" alt="">
                     <!--DESC PRODUCTO-->
                     <h6>Placa Meow</h6>
                     <small class="text-muted">Color: gris</small>
@@ -163,16 +81,46 @@
 
                   <!--PRODUCTO 3-->
                   <li class="list-group-item d-flex justify-content-between">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="select-3" style="margin-top: 40px;">
-                        <label class="form-check-label" for="select-3">
-                            <img src="img/correas/10_placa_negra_blanca.png" width="100" alt="">
-                        </label>
-                    </div>
+                    <img src="img/correas/10_placa_negra_blanca.png" width="100" alt="">
                     <!--DESC PRODUCTO-->
-                    <h6>Correa rayas</h6>
-                    <small class="text-muted">Color: negro</small>
+                    <h6>Correa Rayas</h6>
+                    <small class="text-muted">Largo: 2 metros</small>
                     <span class="text-muted">$4.240</span>
+                  </li>
+
+                  <!--PRODUCTO 4-->
+                  <li class="list-group-item d-flex justify-content-between">
+                    <img src="img/bandanas/9_bandana_donas.png" width="100" alt="">
+                    <!--DESC PRODUCTO-->
+                    <h6>Bandana Donitas</h6>
+                    <small class="text-muted">Color: rojo</small>
+                    <span class="text-muted">$4.455</span>
+                  </li>
+
+                  <!--PRODUCTO 5-->
+                  <li class="list-group-item d-flex justify-content-between">
+                    <img src="img/placas/10_placa_mmeow.png" width="100" alt="">
+                    <!--DESC PRODUCTO-->
+                    <h6>Placa Meow</h6>
+                    <small class="text-muted">Color: Gris</small>
+                    <span class="text-muted">$1.790</span>
+                  </li>
+
+                  <!--PRODUCTO 6-->
+                  <li class="list-group-item d-flex justify-content-between">
+                    <img src="img/placas/5_placa_salchicha.png" width="100" alt="">
+                    <!--DESC PRODUCTO-->
+                    <h6>Placa Salchicha</h6>
+                    <small class="text-muted">Color: Café</small>
+                    <span class="text-muted">$2.690</span>
+                  </li>
+                  <!--PRODUCTO 7-->
+                  <li class="list-group-item d-flex justify-content-between">
+                    <img src="img/correas/4_correa_multicolor.png" width="100" alt="">
+                    <!--DESC PRODUCTO-->
+                    <h6>Correa Rayas</h6>
+                    <small class="text-muted">Largo: 3 metros</small>
+                    <span class="text-muted">$4.360</span>
                   </li>
                 </ul>
               </div>
@@ -244,29 +192,29 @@
 
   <!--Suscripción-->
   <section>
-      <div class="modal fade" id="suscrip">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-      
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-                <div class="modal-body position-static d-block">
-                    <div class="modal-content rounded-1 shadow">
-                        <div class="modal-body p-4 text-center rounded-1">
-                            <img src="img/correcto.png" width="50" alt="">
-                          <h5 class="mb-0">¡Tu suscripción está activa!</h5>
-                          <p class="mb-0">Gracias por apoyarnos, puedes cancelar tu suscripción en cualquier momento</p>
-                        </div>
-                  </div>
-                  <div class="modal-footer flex-nowrap p-0">
-                    <a href="" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right" data-dismiss="modal"><strong>¡Gracias!</strong></a>
-                    <a href="indexUsu.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0">Cancelar suscripción</a>
-                  </div> 
-            </div>
+    <div class="modal fade" id="suscrip">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+    
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+              <div class="modal-body position-static d-block">
+                  <div class="modal-content rounded-1 shadow">
+                      <div class="modal-body p-4 text-center rounded-1">
+                          <img src="img/correcto.png" width="50" alt="">
+                        <h5 class="mb-0">¡Tu suscripción está activa!</h5>
+                        <p class="mb-0">Gracias por apoyarnos, puedes cancelar tu suscripción en cualquier momento</p>
+                      </div>
+                </div>
+                <div class="modal-footer flex-nowrap p-0">
+                  <a href="" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right" data-dismiss="modal"><strong>¡Gracias!</strong></a>
+                  <a href="indexUsu.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0">Cancelar suscripción</a>
+                </div> 
           </div>
         </div>
-  </section>
+      </div>
+    </section>
 
   <!--Confirmar pago-->
   <section>
@@ -282,7 +230,7 @@
                 <div class="spinner-grow" style="margin: 50px; background-color: blueviolet;"></div>
               </div>
               
-              <a href="indexSuscrip.html" class="btn btn-success">Click aquí para continuar</a>
+              <a href="indexUsu.html" class="btn btn-success">Click aquí para continuar</a>
             </div>
       
       
@@ -290,108 +238,108 @@
         </div>
       </div>
   </section>
-
+  
   <!-- MODAL REDES SOCIALES -->
   <section>
-      <!-- The Modal -->
-      <div class="modal fade" id="social">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">¡Síguenos!</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- The Modal -->
+          <div class="modal fade" id="social">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">¡Síguenos!</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body justify-content-between">
+                  <h1 class="lead text-center" style="font-size: 30px; margin-bottom: 20px;">Búscanos en nuestras diversas plataformas</h1>
+                  <ul>
+                    <li class="lead">INSTAGRAM <a href="">@PetWorld</a><img src="img/contact/IG.png" width="60" alt="" style="margin-left: 110px;"></li>
+                    <li class="lead">FACEBOOK <a href="">@Fundación PetWorld</a><img src="img/contact/FACE.png" width="60" alt="" style="margin-left: 26px;"></li>
+                    <li class="lead">TWITTER <a href="">@PetWorld_Info</a><img src="img/contact/TW.png" width="60" alt="" style="margin-left: 96px;"></li>
+                    <li class="lead">WHATSAPP <a href="">+569 4998 8563</a><img src="img/contact/WSP.png" width="60" alt="" style="margin-left: 73px;"></li>
+                  </ul>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+          
+              </div>
             </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body justify-content-between">
-              <h1 class="lead text-center" style="font-size: 30px; margin-bottom: 20px;">Búscanos en nuestras diversas plataformas</h1>
-              <ul>
-                <li class="lead">INSTAGRAM <a href="">@PetWorld</a><img src="img/contact/IG.png" width="60" alt="" style="margin-left: 110px;"></li>
-                <li class="lead">FACEBOOK <a href="">@Fundación PetWorld</a><img src="img/contact/FACE.png" width="60" alt="" style="margin-left: 26px;"></li>
-                <li class="lead">TWITTER <a href="">@PetWorld_Info</a><img src="img/contact/TW.png" width="60" alt="" style="margin-left: 96px;"></li>
-                <li class="lead">WHATSAPP <a href="">+569 4998 8563</a><img src="img/contact/WSP.png" width="60" alt="" style="margin-left: 73px;"></li>
-              </ul>
-            </div>
-      
-            <!-- Modal footer -->
-            <div class="modal-footer justify-content-center">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-            </div>
-      
           </div>
-        </div>
-      </div>
   </section>
-      
+          
   <!--DESARROLLADORES-->
   <section>
-            <!-- The Modal -->
-      <div class="modal fade" id="desarr">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Desarrolladores</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <!-- The Modal -->
+          <div class="modal fade" id="desarr">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Desarrolladores</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body text-center">
+                  <h1 class="lead text-center" style="font-size: 25px;">Conoce a nuestros desarrolladores</h1>
+                  <ul style="list-style: none;">
+                    <li class="lead" style="font-size: 20px;">Alan Zamorano <a href=""> Programador / Director de proyecto</a></li>
+                    <li class="lead" style="font-size: 20px;">Felipe Díaz <a href="">Programador / Diseñador</a></li>
+                    <li class="lead" style="font-size: 20px;">Vanessa Jeldres <a href="">Programador / Front-End</a></li>
+                  </ul>
+                  <img src="img/cat-coding.gif" alt="" class="text-center">
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+          
+              </div>
             </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body text-center">
-              <h1 class="lead text-center" style="font-size: 25px;">Conoce a nuestros desarrolladores</h1>
-              <ul style="list-style: none;">
-                <li class="lead" style="font-size: 20px;">Alan Zamorano <a href=""> Programador / Director de proyecto</a></li>
-                <li class="lead" style="font-size: 20px;">Felipe Díaz <a href="">Programador / Diseñador</a></li>
-                <li class="lead" style="font-size: 20px;">Vanessa Jeldres <a href="">Programador / Front-End</a></li>
-              </ul>
-              <img src="img/cat-coding.gif" alt="" class="text-center">
-            </div>
-      
-            <!-- Modal footer -->
-            <div class="modal-footer justify-content-center">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-            </div>
-      
           </div>
-        </div>
-      </div>
   </section>
-
+    
   <!--FOOTER-->
   <div class="container">
-    <footer class="row row-cols-5 py-5 my-5 border-top">
-      <div class="col col-sm col-lg">
-        <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
-      </div>
-  
-      <div class="col col-sm col-lg"></div>
-  
-      <div class="col col-sm col-lg text-center">
-          <a href="index.html"><img src="img/logoslogan.png" alt="" width="150"></a>
-      </div>
-  
-      <div class="col"></div>
-  
-      <div class="col col-sm col-lg">
-        <h5>Secciones</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted" data-toggle="tooltip" title="Envíanos un mensaje si tienes un problema o duda">Contáctanos</a></li>
-          <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#social" data-toggle="tooltip" title="¡Búscanos!">Redes Sociales</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#desarr" data-toggle="tooltip" title="Conoce a quienes dieron vida a este proyecto">Desarrolladores</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso" data-toggle="tooltip" title="Usos y términos de PetWorld">Políticas y términos</a></li>
-        </ul>
-      </div>
-    </footer>
+        <footer class="row row-cols-5 py-5 my-5 border-top">
+          <div class="col col-sm col-lg">
+            <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
+          </div>
+      
+          <div class="col col-sm col-lg"></div>
+      
+          <div class="col col-sm col-lg text-center">
+              <a href="index.html"><img src="img/logoslogan.png" alt="" width="150"></a>
+          </div>
+      
+          <div class="col"></div>
+      
+          <div class="col col-sm col-lg">
+            <h5>Secciones</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted" data-toggle="tooltip" title="Envíanos un mensaje si tienes un problema o duda">Contáctanos</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#social" data-toggle="tooltip" title="¡Búscanos!">Redes Sociales</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#desarr" data-toggle="tooltip" title="Conoce a quienes dieron vida a este proyecto">Desarrolladores</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso" data-toggle="tooltip" title="Usos y términos de PetWorld">Políticas y términos</a></li>
+            </ul>
+          </div>
+        </footer>
   </div>>
-
-<!--TOOLTIP-->
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
+  
+  <!--TOOLTIP-->
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 
 
 <!-- jQuery library -->

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+  <header>
         <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
           <div class="container">
             <div class="row">
@@ -17,7 +17,7 @@
                 <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
                 <h4 class="text-white">Comprador12_</h4>
                 <img src="img/usuario.png" width="100" alt="">
-                <a href="index.html"><p><small>Cerrar Sesión</small></p></a>
+                <a href="index.html" data-toggle="tooltip" title="¡Hasta pronto!"><p><small>Cerrar Sesión</small></p></a>
                 </div>
               </div>
               <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
@@ -26,7 +26,7 @@
                     <li><p class="text-white">Nombre: Alejandro Rios</li> 
                     <li><p class="text-white">Dirección: Av. Concha y Toro 755</li> 
                     <h1 class="text-white" style="font-size: 20px">Suscripción</h1>
-                  <li><a href="#" class="" data-toggle="modal" data-target="#suscrip">Estado de suscripción</a></li>
+                  <li><a href="#" class="" data-toggle="modal" data-target="#suscrip" data-toggle="tooltip" title="¡Suscripción activa!">Estado de suscripción</a></li>
                 </ul>
               </div>
             </div>
@@ -36,13 +36,13 @@
           <div class="container-fluid d-flex justify-content-between">
             <a href="indexSuscrip.html"><img src="img/LOGOwhite.png" alt="" width="90"></a> 
             <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Usuario Premium!</strong></h1>
-            <a href="carritoPremium.html" style="margin-left: 1000px;"><img src="img/carroWhite.png" alt="" width="50"></a>
-            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
+            <a href="carritoPremium.html" style="margin-left: 1000px;"><img src="img/carroWhite.png" alt="" width="50" data-toggle="tooltip" title="Carrito de compras"></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;" data-toggle="tooltip" title="Click para expandir propiedades del usuario">
             <!--Acá va el nombre de la caja--> <img src="img/usuario.png" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
             </button>
-      </header>
-      <!--NAV-->
-      <section>
+  </header>
+  <!--NAV-->
+  <section>
         
         <nav class="navbar navbar-expand-sm justify-content-center" style="height: 50px; background-color: rgb(144, 74, 209)";>
             <ul class="navbar-nav">
@@ -82,7 +82,7 @@
                 <button class="btn text-white" type="submit" style="font-size: 15px; background: rgb(53, 165, 92);">Buscar</button>
               </form>
           </nav>
-      </section>
+  </section>
      
     <!--SECCIÓN 1-->
     <section>
@@ -346,8 +346,8 @@
 
 
 
-    <!--MODAL COMPRA-->
-    <section>
+  <!--MODAL COMPRA-->
+  <section>
     <div class="modal fade" id="productoAgregado">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -374,10 +374,10 @@
         </div>
       </div>
     </div>
-     </section>
+  </section>
 
-    <!--Ventana términos de uso-->
-    <section>
+  <!--Ventana términos de uso-->
+  <section>
         <!-- The Modal -->
         <div class="modal fade" id="termUso">
             <div class="modal-dialog modal-lg">
@@ -436,10 +436,10 @@
               </div>
             </div>
         </div>
-    </section>
+  </section>
 
-    <!--Suscripción-->
-   <section>
+  <!--Suscripción-->
+  <section>
   <div class="modal fade" id="suscrip">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -462,35 +462,109 @@
         </div>
       </div>
     </div>
-   </section>
-  
-    <!--FOOTER-->
-    <div class="container">
+  </section>
+
+  <!-- MODAL REDES SOCIALES -->
+  <section>
+    <!-- The Modal -->
+    <div class="modal fade" id="social">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">¡Síguenos!</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body justify-content-between">
+            <h1 class="lead text-center" style="font-size: 30px; margin-bottom: 20px;">Búscanos en nuestras diversas plataformas</h1>
+            <ul>
+              <li class="lead">INSTAGRAM <a href="">@PetWorld</a><img src="img/contact/IG.png" width="60" alt="" style="margin-left: 110px;"></li>
+              <li class="lead">FACEBOOK <a href="">@Fundación PetWorld</a><img src="img/contact/FACE.png" width="60" alt="" style="margin-left: 26px;"></li>
+              <li class="lead">TWITTER <a href="">@PetWorld_Info</a><img src="img/contact/TW.png" width="60" alt="" style="margin-left: 96px;"></li>
+              <li class="lead">WHATSAPP <a href="">+569 4998 8563</a><img src="img/contact/WSP.png" width="60" alt="" style="margin-left: 73px;"></li>
+            </ul>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!--DESARROLLADORES-->
+  <section>
+          <!-- The Modal -->
+    <div class="modal fade" id="desarr">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Desarrolladores</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body text-center">
+            <h1 class="lead text-center" style="font-size: 25px;">Conoce a nuestros desarrolladores</h1>
+            <ul style="list-style: none;">
+              <li class="lead" style="font-size: 20px;">Alan Zamorano <a href=""> Programador / Director de proyecto</a></li>
+              <li class="lead" style="font-size: 20px;">Felipe Díaz <a href="">Programador / Diseñador</a></li>
+              <li class="lead" style="font-size: 20px;">Vanessa Jeldres <a href="">Programador / Front-End</a></li>
+            </ul>
+            <img src="img/cat-coding.gif" alt="" class="text-center">
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <div class="container">
   <footer class="row row-cols-5 py-5 my-5 border-top">
-    <div class="col">
+    <div class="col col-sm col-lg">
       <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
     </div>
 
-    <div class="col"></div>
+    <div class="col col-sm col-lg"></div>
 
-    <div class="col text-center">
-        <a href="indexUsu.html"><img src="img/logoslogan.png" alt="" width="150"></a>
+    <div class="col col-sm col-lg text-center">
+        <a href="index.html"><img src="img/logoslogan.png" alt="" width="150"></a>
     </div>
 
     <div class="col"></div>
 
-    <div class="col">
+    <div class="col col-sm col-lg">
       <h5>Secciones</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Contáctanos</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Redes Sociales</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso">Políticas y términos</a></li>
+        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted" data-toggle="tooltip" title="Envíanos un mensaje si tienes un problema o duda">Contáctanos</a></li>
+        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#social" data-toggle="tooltip" title="¡Búscanos!">Redes Sociales</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#desarr" data-toggle="tooltip" title="Conoce a quienes dieron vida a este proyecto">Desarrolladores</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso" data-toggle="tooltip" title="Usos y términos de PetWorld">Políticas y términos</a></li>
       </ul>
     </div>
   </footer>
-</div>
+  </div>
 
+  <!--TOOLTIP-->
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
 
 <!-- jQuery library -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
