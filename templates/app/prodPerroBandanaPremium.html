@@ -1,0 +1,372 @@
+{% extends 'app/base.html' %} {% load static %} {% block contenido %}
+	{% block usuario %}
+  <header>
+    <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
+            <h4 class="text-white">Comprador12_</h4>
+            <img src="{% static 'app/img/usuario.png' %}" width="100" alt="">
+            <a href="index.html"><p><small>Cerrar Sesión</small></p></a>
+            </div>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
+            <h4 class="text-white">Información del usuario</h4>
+            <ul class="list-unstyled">
+                <li><p class="text-white">Nombre: Alejandro Rios</li> 
+                <li><p class="text-white">Dirección: Av. Concha y Toro 755</li> 
+                <h1 class="text-white" style="font-size: 20px">Suscripción</h1>
+              <li><a href="#" class="" data-toggle="modal" data-target="#suscrip">Estado de suscripción</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark  box-shadow" style="padding: 8px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="indexSuscrip.html"><img src="{% static 'app/img/LOGOwhite.png'%}" alt="" width="90"></a> 
+        <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Usuario Premium!</strong></h1>
+        <a href="carritoPremium.html" style="margin-left: 1000px;"><img src="{% static 'app/img/carroWhite.png'%}" alt="" width="50"></a>
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;">
+        <!--Acá va el nombre de la caja--> <img src="{% static 'app/img/usuario.png'%}" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
+        </button>
+  </header>
+  {% endblock usuario %}
+
+    <!--SECCIÓN 1-->
+    <div class="container-fluid justify-content-between" 
+            style="background-color: rgb(241, 187, 121); 
+            flex-wrap: wrap;">
+            <h1 class="text-center lead" style="font-family: Arial, Helvetica, sans-serif; padding: 50px; font-size: 30px;">¡Bandanas de colores y formas para el canino!</h1>
+        <section>
+            <div class="row text-center"> 
+                <div class="col-sm-1"></div>
+                <!--PRODUCTO 1-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/10_bandana_rayos.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana "electric"</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Rojo</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $4.990</del></li>
+                                <li>Precio suscriptor (-10%): $4.490</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 2-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/1_bandana_estrellas.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana Estrellas</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Rojo y blanco</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $4.990</del></li>
+                                <li>Precio suscriptor (-10%): $4.490</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 3-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/2_bandana_cuadrille.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana Cuadrille</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Cián, negro, blanco</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $5.990</del></li>
+                                <li>Precio suscriptor (-10%): $5.490</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 4-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/9_bandana_donas.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana donitas</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Rojo</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $5.690</del></li>
+                                <li>Precio suscriptor (-10%): $5.120</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 4-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/3_bandas_azul_1.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana Gentil</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Azul, rojo, blanco</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $3.990</del></li>
+                                <li>Precio suscriptor (-10%): $3.490</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div> 
+        </section>
+    </div>
+    
+    <!--SECCIÓN 2-->
+    <div class="container-fluid justify-content-between" 
+            style="background-color: rgb(240, 172, 89); 
+            flex-wrap: wrap;">
+            <h1 class="text-center lead" style="font-family: Arial, Helvetica, sans-serif; padding: 50px; font-size: 30px;"></h1>
+        <section>
+            <div class="row text-center"> 
+                <div class="col-sm-1"></div>
+                <!--PRODUCTO 1-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/4_bandas_blanca_2.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana Simple</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Blanco, negro</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $4.290</del></li>
+                                <li>Precio suscriptor (-5%): $4.080</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 2-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/6_bandana_pandas.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana Panda</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Blanco, negro, azul</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $5.590</del></li>
+                                <li>Precio suscriptor (-10%): $5.310</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 3-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/7_bandana_cuadrille_verde.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana Groove</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Verde, negro, morado</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $6.690</del></li>
+                                <li>Precio suscriptor (-10%): $6.020</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 4-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/5_bandana__cuadrille.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana Bad</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Rojo, negro</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $5.890</del></li>
+                                <li>Precio suscriptor (-10%): $5.300</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCTO 4-->
+                <div class="col-sm-2">
+                    <div class="card mb-4 rounded- shadow-sm">
+                        <div class="card-header py-3">
+                            <a href=""><img src="{% static 'app/img/bandanas/8_bandana_perros_celeste.png' %}" width="100" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Bandana Perritos</h3>
+                            <h5>Características</h5>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Color: Celeste</li>
+                                <li>Para: Perro</li>
+                                <li><del>Valor: $4.790</del></li>
+                                <li>Precio suscriptor (-5%): $4.450</li>
+                            </ul>
+                            <a class="btn text-white" href="#" role="button" data-toggle="modal" data-target="#productoAgregado" style="font-size: 15px; background: rgb(53, 165, 92);">Añadir al carro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div> 
+        </section>
+    </div>
+
+    <!--MODAL COMPRA-->
+    <section>
+      <div class="modal fade" id="productoAgregado">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+        
+            <!-- Modal body -->
+            <div class="modal-body position-static d-block">
+              <div class="modal-content rounded-1 shadow">
+                  <div class="modal-body p-4 text-center rounded-1">
+                      <img src="{% static 'app/img/correcto.png' %}" width="50" alt="">
+                    <h5 class="mb-0">¡Producto agregado!</h5>
+                    <p class="mb-0">Puedes continuar agregando productos a tu carro</p>
+                  </div>
+            </div>
+  
+                  <div class="modal-footer flex-nowrap p-0">
+                    <a href="carritoPremium.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>Ir al carro</strong></a>
+                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0" data-dismiss="modal">Seguir comprando</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+       </section>
+  
+      <!--Ventana términos de uso-->
+      <section>
+          <!-- The Modal -->
+          <div class="modal fade" id="termUso">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+              
+                  <!-- Modal Header -->
+              
+                  <!-- Modal body -->
+                  <div class="modal-body bg-primary">
+                    <div class="text-center">
+                        <img src="{% static 'app/img/logoslogan.png' %}" alt="" width="200">
+                    </div>
+                    <section>
+                      <div class="container-fluid bg-primary">
+                            <div class="container text-white">
+                              <h1 class="display-4" style="font-size: 30px;">1. Condiciones de uso</h1>
+                              <h2 class="lead">Las condiciones aquí citadas se aplican a todas las transacciones realizadas en www.petworld.cl, dominio del que es titular UNIDAD POR ANIMALES S.L (de aquí en adelante www.petworld.cl), sociedad constituida en Chile, con domicilio social en Av. Concha Y Toro 680, Puente Alto, Región Metropolitana.</h2>
+                              <h2 class="lead">PetWorld provee con esta Web un servicio a sus clientes. Por favor revise los términos y condiciones de venta que rigen nuestra página Web. El uso por parte del cliente de www.petworld.cl constituye un acuerdo con las siguientes condiciones generales y términos de venta. Si usted no está de acuerdo con estos términos, por favor absténgase de hacer uso de la página Web.</h2>
+                              <h2 class="lead"></h2>
+                            </div>
+                            <div class="container text-white">
+                                <h1 class="display-4" style="font-size: 30px;">2. Contenido de la página Web.</h1>
+                                <h2 class="lead">PetWorld intenta siempre que sus contenidos estén revisados y no contengan información incorrecta. En caso de producirse un error de este tipo ajeno a nuestra voluntad procederemos a corregirlo inmediatamente.</h2>
+                                <h2 class="lead">PetWorld.cl no podrá ser considerada responsable de ningún uso de la Web o de sus contenidos por parte de cada uno de los usuarios que no respete la legislación y normativas vigentes. El usuario es el único y exclusivo responsable de la comunicación de información y datos incorrectos, falsos o relativos a terceros (en caso de que estos no hayan expresado consentimiento al respecto) asi como del uso incorrecto de los mismos.</h2>
+                                <h2 class="lead">PetWorld ha hecho un esfuerzo para mostrar con tanta precisión como le ha sido posible los colores de los productos que aparecen en la Web. En cualquier caso, los colores que el usurario verá dependerán también del monitor que esté usando, por tanto PetWorld no puede garantizar la precisión del color que dicho monitor muestra.</h2>
+                            </div>
+                            <div class="container text-white">
+                              <h1 class="display-4" style="font-size: 30px;">3. Derechos de propiedad intelectual</h1>
+                              <h2 class="lead">El usuario reconoce y admite que todo el copyright, los diseños, las fotografías incluyendo los derechos de imagen, los gráficos, los sonidos, la música, video, audio, texto, las marcas registradas, y todos los demás contenidos y derechos intelectuales y materiales referentes al contenido aquí descrito, están protegidos por los derechos de autor y otros derechos sobre la propiedad intelectual de PetWorld y de los demás titulares de derechos.</h2>
+                              <h2 class="lead">Esta Web es para el uso personal del usuario y no comercial. Está prohibido copiar, modificar, distribuir, transmitir, publicar o explotar comercialmente cualquier contenido, producto o servicio de esta Web.</h2>
+                            </div>
+                            <div class="container text-white">
+                              <h1 class="display-4" style="font-size: 30px;">4. Precios y disponibilidad de productos</h1>
+                              <h2 class="lead">Los precios y la disponibilidad de los productos de www.petworld.cl son válidos salvo fin de existencias o error tipográfico. PetWorld se reserva el derecho a modificar los precios de los artículos ofertados en la Web, siendo la base de la facturación la tarifa/s en vigor en el momento que se realice el pedido. Asimismo podrá modificar los porcentajes correspondientes a los gastos de envío si fuese necesario y sin previo aviso.</h2>
+                              <h2 class="lead">PetWorld se reserva el derecho a decidir en cada momento los productos que aparezcan y que se ofrezcan a los Usuarios a través de la Web, pudiendo en cualquier caso incluir nuevos productos que se unan a los ya existentes en la Web, rigiéndose estos, salvo que se manifieste lo contrario, por lo dispuesto en las condiciones generales que se encuentren en vigor en ese momento. Así mismo, PetWorld se reserva el derecho suprimir en cualquier momento y sin necesidad de aviso, cualquiera de los elementos que ofrezca en su Web.</h2>
+                              <h2 class="lead">Los precios que aparecen incluyen el I.V.A.</h2>
+                              <h2 class="lead">Los gastos de envío para todos los pedidos dentro de la península dependerán del volúmen del o de los objeto/s comprado/s, a excepción de aquellos que superen los $40.000 de compra que serán gratuitos, salvo códigos descuento y/o otras promociones aplicables. Los gastos de envío, en su caso, se aplicarán por envío con independencia del número de artículos que contenga el mismo.</h2>
+                              <h2 class="lead">Puedes hacer pruebas y calcular el coste total de la compra sin temor. El sistema te avisará claramente antes de finalizar la misma.</h2>
+                              <h2 class="lead">Los pedidos se atenderán por riguroso orden de recepción.</h2>
+                              <h2 class="lead">En caso de finalizar las existencias de un producto solicitado, se cancelará del pedido del cliente previo aviso.</h2>
+                              <h2 class="lead">Salvo error, se considerarán disponibles en stock todos los artículos visibles en www.petworld.cl, salvo que se indique como “Actualmente Fuera de Stock” en la ficha de producto.</h2>
+                            </div>
+                            <div class="container text-white">
+                              <h1 class="display-4" style="font-size: 30px;">5. Política de Envíos</h1>
+                              <h2 class="lead">Los envíos se realizaran por personal de PetWorld dentro de Santiago. Para localidades fuera de la región, será encargado por terceros.</h2>
+                              <h2 class="lead">El plazo de entrega se corresponde con los días que transcurren desde que se ha finalizado la elaboración del pedido hasta que el cliente recibe el mismo.</h2>
+                              <h2 class="lead">Los plazos de entrega salvo fuerza mayor (por causas ajenas a nuestra competencia) son en Chile: de 3 a 7 días laborables en los envíos normales y en el caso de entregas urgentes 48-72 horas, son dos días laborables si no hay problemas con la dirección facilitada.</h2>
+                              <h2 class="lead"></h2>
+                            </div>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+  
+      <!--Suscripción-->
+     <section>
+    <div class="modal fade" id="suscrip">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+    
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+              <div class="modal-body position-static d-block">
+                  <div class="modal-content rounded-1 shadow">
+                      <div class="modal-body p-4 text-center rounded-1">
+                          <img src="{% static 'app/img/correcto.png' %}" width="50" alt="">
+                        <h5 class="mb-0">¡Tu suscripción está activa!</h5>
+                        <p class="mb-0">Gracias por apoyarnos, puedes cancelar tu suscripción en cualquier momento</p>
+                      </div>
+                </div>
+                <div class="modal-footer flex-nowrap p-0">
+                  <a href="" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right" data-dismiss="modal"><strong>¡Gracias!</strong></a>
+                  <a href="indexUsu.html" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0">Cancelar suscripción</a>
+                </div> 
+          </div>
+        </div>
+      </div>
+     </section>
+{% endblock contenido %}

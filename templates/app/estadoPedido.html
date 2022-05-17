@@ -1,0 +1,392 @@
+{% extends 'app/base.html' %} {% load static %} {% block contenido %}
+{% block usuario %}
+  <header>
+    <div class="collapse" id="navbarHeader" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 1-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <div class="container text-center"> <!--Encapsulo imagen y nombre de usuario para alinear-->
+            <h4 class="text-white">Comprador12_</h4>
+            <img src="{% static 'app/img/usuario.png' %}" width="100" alt="">
+            <a href="index.html"  data-toggle="tooltip" title="¡Hasta pronto!"><p><small>Cerrar Sesión</small></p></a>
+            </div>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4" style="background-color: rgb(105, 32, 173)"> <!--ÁREA EXPANDIDA 2-->
+            <h4 class="text-white">Información del usuario</h4>
+            <ul class="list-unstyled">
+                <li><p class="text-white">Nombre: Alejandro Rios</li> 
+                <li><p class="text-white">Dirección: Av. Concha y Toro 755</li> 
+                <h1 class="text-white" style="font-size: 20px">¿Aún no estás suscrito?</h1>
+              <li><a href="#" class="" data-toggle="modal" data-target="#suscrip"  data-toggle="tooltip" title="Accede a descuentos únicos">Suscripción</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="navbar navbar-dark  box-shadow" style="padding: 8px; background-color: rgb(156, 94, 214)";> <!--CAJA CONTRAIBLE-->
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="indexUsu.html"><img src="{% static 'app/img/LOGOwhite.png' %}" alt="" width="90"></a> 
+        <h1 class="lead text-white" style="font-size: 30px;"><strong>¡Bienvenido!</strong></h1>
+        <a href="carrito.html" style="margin-left: 1080px;"><img src="{% static 'app/img/carroWhite.png' %}" alt="" width="50" data-toggle="tooltip" title="Carrito de compras"></a>
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="font-family: Arial, Helvetica, sans-serif;"  data-toggle="tooltip" title="Click para expandir propiedades del usuario">
+        <!--Acá va el nombre de la caja--> <img src="{% static 'app/img/usuario.png' %}" alt="" width="30"> Comprador12_ <span class="navbar-toggler-icon"></span>
+        </button>
+  </header>
+  {% endblock usuario %}
+  <!--NAV-->
+  <section>
+        <nav class="navbar navbar-expand-sm justify-content-center" style="height: 50px; background-color: rgb(144, 74, 209)";>
+            <ul class="navbar-nav">
+              <li class="nav-item mr-5">
+                <a href="estadoPedido.html" class="text-white">Estado del pedido</a>
+              </li>
+              <li class="nav-item">
+                <a href="historial.html" class="text-white">Historial de búsqueda</a>
+              </li>
+            </ul>
+          </nav>
+  </section>
+
+      <div class="container" style="max-width: 1300px;">
+        <main>
+            <div class="py-5 text-center">
+                <h2>Estado de compra</h2>
+                <p class="text-muted">&copy; PetWorld 2022</p>
+            </div>
+            
+                 <!--Lista de productos en el carro-->
+             <ul class="list-group">   
+                <li class="list-group-item d-flex justify-content-between">
+                          <img src="{% static 'app/img/bandanas/10_bandana_rayos.png' %}" width="100" alt="">
+                  <!--Descripción producto-->
+                  <h6>Bandana Electric</h6>
+                  <small class="text-muted">Estado pedido</small>
+                  <span class="text-muted">Enviado</span>
+                </li>
+
+                <!--PRODUCTO 2-->
+                <li class="list-group-item d-flex justify-content-between">
+                          <img src="{% static 'app/img/placas/10_placa_mmeow.png' %}" width="100" alt="">
+                  <!--DESC PRODUCTO-->
+                  <h6>Placa Meow</h6>
+                  <small class="text-muted">Estado pedido</small>
+                  <span class="text-muted">Enviado</span>
+                </li>
+
+                <!--PRODUCTO 3-->
+                <li class="list-group-item d-flex justify-content-between"> 
+                          <img src="{% static 'app/img/correas/10_placa_negra_blanca.png' %}" width="100" alt="">
+                  <!--DESC PRODUCTO-->
+                  <h6>Correa Rayas</h6>
+                  <small class="text-muted">Estado pedido</small>
+                  <span class="text-muted">Procesando pago</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+
+  <!--Ventana términos de uso-->
+  <section>
+    <!-- The Modal -->
+    <div class="modal fade" id="termUso">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+        
+            <!-- Modal Header -->
+        
+            <!-- Modal body -->
+            <div class="modal-body bg-primary">
+              <div class="text-center">
+                  <img src="{% static 'app/img/logoslogan.png' %}" alt="" width="200">
+              </div>
+              <section>
+                <div class="container-fluid bg-primary">
+                      <div class="container text-white">
+                        <h1 class="display-4" style="font-size: 30px;">1. Condiciones de uso</h1>
+                        <h2 class="lead">Las condiciones aquí citadas se aplican a todas las transacciones realizadas en www.petworld.cl, dominio del que es titular UNIDAD POR ANIMALES S.L (de aquí en adelante www.petworld.cl), sociedad constituida en Chile, con domicilio social en Av. Concha Y Toro 680, Puente Alto, Región Metropolitana.</h2>
+                        <h2 class="lead">PetWorld provee con esta Web un servicio a sus clientes. Por favor revise los términos y condiciones de venta que rigen nuestra página Web. El uso por parte del cliente de www.petworld.cl constituye un acuerdo con las siguientes condiciones generales y términos de venta. Si usted no está de acuerdo con estos términos, por favor absténgase de hacer uso de la página Web.</h2>
+                        <h2 class="lead"></h2>
+                      </div>
+                      <div class="container text-white">
+                          <h1 class="display-4" style="font-size: 30px;">2. Contenido de la página Web.</h1>
+                          <h2 class="lead">PetWorld intenta siempre que sus contenidos estén revisados y no contengan información incorrecta. En caso de producirse un error de este tipo ajeno a nuestra voluntad procederemos a corregirlo inmediatamente.</h2>
+                          <h2 class="lead">PetWorld.cl no podrá ser considerada responsable de ningún uso de la Web o de sus contenidos por parte de cada uno de los usuarios que no respete la legislación y normativas vigentes. El usuario es el único y exclusivo responsable de la comunicación de información y datos incorrectos, falsos o relativos a terceros (en caso de que estos no hayan expresado consentimiento al respecto) asi como del uso incorrecto de los mismos.</h2>
+                          <h2 class="lead">PetWorld ha hecho un esfuerzo para mostrar con tanta precisión como le ha sido posible los colores de los productos que aparecen en la Web. En cualquier caso, los colores que el usurario verá dependerán también del monitor que esté usando, por tanto PetWorld no puede garantizar la precisión del color que dicho monitor muestra.</h2>
+                      </div>
+                      <div class="container text-white">
+                        <h1 class="display-4" style="font-size: 30px;">3. Derechos de propiedad intelectual</h1>
+                        <h2 class="lead">El usuario reconoce y admite que todo el copyright, los diseños, las fotografías incluyendo los derechos de imagen, los gráficos, los sonidos, la música, video, audio, texto, las marcas registradas, y todos los demás contenidos y derechos intelectuales y materiales referentes al contenido aquí descrito, están protegidos por los derechos de autor y otros derechos sobre la propiedad intelectual de PetWorld y de los demás titulares de derechos.</h2>
+                        <h2 class="lead">Esta Web es para el uso personal del usuario y no comercial. Está prohibido copiar, modificar, distribuir, transmitir, publicar o explotar comercialmente cualquier contenido, producto o servicio de esta Web.</h2>
+                      </div>
+                      <div class="container text-white">
+                        <h1 class="display-4" style="font-size: 30px;">4. Precios y disponibilidad de productos</h1>
+                        <h2 class="lead">Los precios y la disponibilidad de los productos de www.petworld.cl son válidos salvo fin de existencias o error tipográfico. PetWorld se reserva el derecho a modificar los precios de los artículos ofertados en la Web, siendo la base de la facturación la tarifa/s en vigor en el momento que se realice el pedido. Asimismo podrá modificar los porcentajes correspondientes a los gastos de envío si fuese necesario y sin previo aviso.</h2>
+                        <h2 class="lead">PetWorld se reserva el derecho a decidir en cada momento los productos que aparezcan y que se ofrezcan a los Usuarios a través de la Web, pudiendo en cualquier caso incluir nuevos productos que se unan a los ya existentes en la Web, rigiéndose estos, salvo que se manifieste lo contrario, por lo dispuesto en las condiciones generales que se encuentren en vigor en ese momento. Así mismo, PetWorld se reserva el derecho suprimir en cualquier momento y sin necesidad de aviso, cualquiera de los elementos que ofrezca en su Web.</h2>
+                        <h2 class="lead">Los precios que aparecen incluyen el I.V.A.</h2>
+                        <h2 class="lead">Los gastos de envío para todos los pedidos dentro de la península dependerán del volúmen del o de los objeto/s comprado/s, a excepción de aquellos que superen los $40.000 de compra que serán gratuitos, salvo códigos descuento y/o otras promociones aplicables. Los gastos de envío, en su caso, se aplicarán por envío con independencia del número de artículos que contenga el mismo.</h2>
+                        <h2 class="lead">Puedes hacer pruebas y calcular el coste total de la compra sin temor. El sistema te avisará claramente antes de finalizar la misma.</h2>
+                        <h2 class="lead">Los pedidos se atenderán por riguroso orden de recepción.</h2>
+                        <h2 class="lead">En caso de finalizar las existencias de un producto solicitado, se cancelará del pedido del cliente previo aviso.</h2>
+                        <h2 class="lead">Salvo error, se considerarán disponibles en stock todos los artículos visibles en www.petworld.cl, salvo que se indique como “Actualmente Fuera de Stock” en la ficha de producto.</h2>
+                      </div>
+                      <div class="container text-white">
+                        <h1 class="display-4" style="font-size: 30px;">5. Política de Envíos</h1>
+                        <h2 class="lead">Los envíos se realizaran por personal de PetWorld dentro de Santiago. Para localidades fuera de la región, será encargado por terceros.</h2>
+                        <h2 class="lead">El plazo de entrega se corresponde con los días que transcurren desde que se ha finalizado la elaboración del pedido hasta que el cliente recibe el mismo.</h2>
+                        <h2 class="lead">Los plazos de entrega salvo fuerza mayor (por causas ajenas a nuestra competencia) son en Chile: de 3 a 7 días laborables en los envíos normales y en el caso de entregas urgentes 48-72 horas, son dos días laborables si no hay problemas con la dirección facilitada.</h2>
+                        <h2 class="lead"></h2>
+                      </div>
+                      <div class="text-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                      </div>
+                  </div>
+              </section>
+            </div>
+          </div>
+        </div>
+    </div>
+</section> 
+
+  <!--Suscripción-->
+  <section>
+  <div class="modal fade" id="suscrip">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="container">
+                <main>
+                  <div class="py-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="{% static 'app/img/logo2.png' %}" alt="" width="200">
+                    <h2>Formulario de suscripción</h2>
+                    <div class="container">
+                        <ul style="list-style: none;">
+                            <li><h2 class="lead">Fundación sin fines de lucro dedicada al apoyo incondicional de felinos y caninos por igual, sin dejar excenta cualquier especie animal.</h2></li>
+                            <li><h2 class="lead">Nuestro objetivo como fundación es recaudar dinero mensualmente para donarlo a animales necesitados de todas las especies y razas</h2></li>
+                            <li><h2 class="lead"><b>Tu suscripción puede salvar vidas de miles de mascotas abandonadas.</b></h2></li>
+                        </ul>
+                          <div class="container text-center">
+                           <h2 class="lead"><b>El valor mensual de la suscripción tiene un costo de $10.000 (sin valores agregados) y gozarás de descuentos por cada producto que compres. Mientras más productos tengas en tu carro, más alto será el descuento.</b></h2>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                    </div>
+                    <div class="container">
+                      <h4 class="mb-3">Ingresa los datos solicitados</h4>
+                      <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                          <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Se requiere un nombre válido.
+                            </div>
+                          </div>
+              
+                          <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Apellido/s</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Se requiere apellido/s válido.
+                            </div>
+                          </div>
+              
+                          <div class="col-12" style="padding: 15px;">
+                            <label for="Nombreusuario" class="form-label">Nombre de usuario</label>
+                            <div class="input-group has-validation">
+                              <span class="input-group-text">@</span>
+                              <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                            <div class="invalid-feedback">
+                                Se requiere un nombre de usuario.
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="col-12" style="padding: 10px;">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+                            <div class="invalid-feedback">
+                              Ingrese correo válido para recibir newsletters.
+                            </div>
+                          </div>       
+
+                        </div>
+                        <hr class="my-4">
+              
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="save-info">
+                          <label class="form-check-label" for="save-info">Guardar información</label>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <h4 class="mb-3">Forma de pago</h4>
+              
+                        <div class="my-3">
+                          <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                            <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                          </div>
+                          <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Tarjeta de débito</label>
+                          </div>
+                          <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                          </div>
+                        </div>
+              
+                        <div class="row gy-3">
+                          <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-muted">Nombre completo como figura en la tarjeta</small>   
+                            <div class="invalid-feedback">
+                              Se requiere nombre en la tarjeta
+                            </div>
+                          </div>
+              
+                          <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Número de tarjeta de crédito</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Se requiere número de la tarjeta
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Expira</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                              Se requiere datos de expiración
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                              Código de seguridad requerido
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="save-info2">
+                                <label class="form-check-label" for="save-info2">Guardar información</label>
+                              </div>
+                              <section>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="termUso">
+                                    <p><b>Acepto</b><a href="#" data-toggle="modal" data-target="#termUso"> <b>términos y condiciones de uso.</b></a>
+                                  </div>
+                          </div>
+                          <a href="indexSuscrip.html" class="btn btn-primary"><p class="mt-4">Confirmar</p></a>
+                        </div>
+              
+                        <hr class="my-4">
+                        <button class="w-100 btn btn-danger btn-lg" data-dismiss="modal">Cancelar y volver</button>
+                      </form>
+                    </div>
+                  </div>
+                </main>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Confirmar pago-->
+  <section>
+  <div class="modal fade" id="confirmarAccion">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          <h4>Estamos procesando su pago</h4>
+          <div class="text-center">
+            <div class="spinner-grow" style="margin: 50px; background-color: blueviolet;"></div>
+          </div>
+          
+          <a href="indexUsu.html" class="btn btn-success">Click aquí para continuar</a>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- MODAL REDES SOCIALES -->
+  <section>
+      <!-- The Modal -->
+      <div class="modal fade" id="social">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">¡Síguenos!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body justify-content-between">
+              <h1 class="lead text-center" style="font-size: 30px; margin-bottom: 20px;">Búscanos en nuestras diversas plataformas</h1>
+              <ul>
+                <li class="lead">INSTAGRAM <a href="">@PetWorld</a><img src="{% static 'app/img/contact/IG.png' %}" width="60" alt="" style="margin-left: 110px;"></li>
+                <li class="lead">FACEBOOK <a href="">@Fundación PetWorld</a><img src="{% static 'app/img/contact/FACE.png' %}" width="60" alt="" style="margin-left: 26px;"></li>
+                <li class="lead">TWITTER <a href="">@PetWorld_Info</a><img src="{% static 'app/img/contact/TW.png' %}" width="60" alt="" style="margin-left: 96px;"></li>
+                <li class="lead">WHATSAPP <a href="">+569 4998 8563</a><img src="{% static 'app/img/contact/WSP.png' %}" width="60" alt="" style="margin-left: 73px;"></li>
+              </ul>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+  </section>
+      
+  <!--DESARROLLADORES-->
+  <section>
+            <!-- The Modal -->
+      <div class="modal fade" id="desarr">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Desarrolladores</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <h1 class="lead text-center" style="font-size: 25px;">Conoce a nuestros desarrolladores</h1>
+              <ul style="list-style: none;">
+                <li class="lead" style="font-size: 20px;">Alan Zamorano <a href=""> Programador / Director de proyecto</a></li>
+                <li class="lead" style="font-size: 20px;">Felipe Díaz <a href="">Programador / Diseñador</a></li>
+                <li class="lead" style="font-size: 20px;">Vanessa Jeldres <a href="">Programador / Front-End</a></li>
+              </ul>
+              <img src="{% static 'app/img/cat-coding.gif' %}" alt="" class="text-center">
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+  </section>
+{% endblock contenido %}

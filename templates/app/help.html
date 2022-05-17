@@ -1,0 +1,79 @@
+{% extends 'app/base.html' %} {% load static %} {% block contenido %}
+
+        <!--LOGO SITIO WEB-->
+        <header>
+            <div class="container-fluid text-center" style="background-color: rgb(156, 94, 214);">
+                <a class="navbar-brand" href="index.html"><img src="{% static 'app/img/LOGOwhite.png' %}" alt="" width="90"></a>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <section>
+                            <div class="container">
+                              <h4 class="mb-3 text-center" style="margin: 50px;">Ingresa los datos solicitados</h4>
+                              <form>
+                                <select name="cars" class="custom-select">
+                                  <option selected>Seleccione motivo</option>
+                                  <option value="recl1">Reclamo por retraso</option>
+                                  <option value="recl2">Garantía de producto</option>
+                                  <option value="recl3">Deseo modificar o cancelar mi pedido</option>
+                                  <option value="recl4">Otro motivo</option>
+                                </select>
+                              </form>
+                              <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                  <div class="col-sm-6">
+                                    <label for="firstName" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                    <div class="invalid-feedback">
+                                      Se requiere un nombre válido.
+                                    </div>
+                                  </div>
+                        
+                                  <div class="col-sm-6">
+                                    <label for="lastName" class="form-label">Apellido/s</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                    <div class="invalid-feedback">
+                                        Se requiere apellido/s válido.
+                                    </div>
+                                  </div>
+                        
+                                  <div class="col-12" style="padding: 15px;">
+                                    <label for="Nombreusuario" class="form-label">Nombre de usuario</label>
+                                    <div class="input-group has-validation">
+                                      <span class="input-group-text">@</span>
+                                      <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                                    <div class="invalid-feedback">
+                                        Se requiere un nombre de usuario.
+                                      </div>
+                                    </div>
+                                  </div>
+                        
+                                  <div class="col-12" style="padding: 10px;">
+                                    <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+                                    <div class="invalid-feedback">
+                                      Ingrese correo válido para recibir newsletters.
+                                    </div>
+                                  </div>       
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment">Cuéntanos brevemente tu situación</label>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                  </div>
+                                <hr class="my-4">
+                                <button class="w-100 btn btn-success" type="submit">Aceptar y continuar</button>
+                              </form>
+                            </div>
+                          </div>
+                        </main>
+                    </div>
+                  </div>
+                </div>
+               </section>
+               
+               <div class="text-center mt-3">
+                 <p><b>Tu opinión nos ayuda a mejorar nuestro servicio</b></p>
+                 <img src="{% static 'app/img/helpus.png' %}" alt="" width="500" class=""></div>
+        </div>
+
+{% endblock %}

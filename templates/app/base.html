@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.8/sweetalert2.min.js" integrity="sha512-7x7HoEikRZhV0FAORWP+hrUzl75JW/uLHBbg2kHnPdFmScpIeHY0ieUVSacjusrKrlA/RsA2tDOBvisFmKc3xw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.8/sweetalert2.css" integrity="sha512-40/Lc5CTd+76RzYwpttkBAJU68jKKQy4mnPI52KKOHwRBsGcvQct9cIqpWT/XGLSsQFAcuty1fIuNgqRoZTiGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="{% static 'app/js/mensajes.js' %} ">
+    </script>
+
+    <body>
+        <div class="container-fluid ">
+
+        </div>
+        <header>
+            <div class="collapse " id="navbarHeader " style="background-color: rgb(105, 32, 173) ">
+                <!--ÁREA EXPANDIDA 1-->
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-sm-8 col-md-7 py-4 ">
+                            <div class="container text-center ">
+                                <!--Encapsulo imagen y nombre de usuario para alinear-->
+                                <h4 class="text-white ">¡No tienes una cuenta!</h4>
+                                <img src="{% static 'app/img/perfilWhite.png' %} " width="100 " alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4 " style="background-color: rgb(105, 32, 173) ">
+                            <!--ÁREA EXPANDIDA 2-->
+                            <h4 class="text-white ">Información del usuario</h4>
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <p class="text-white ">Nombre: </li>
+                                <li>
+                                    <p class="text-white ">Dirección: </li>
+                                <h1 class="text-white " style="font-size: 20px ">¿Aún no estás suscrito?</h1>
+                                <li>
+                                    <p class="text-white ">Para suscribirte debes <a href=" " data-toggle="modal " data-target="#myModal1 ">tener una cuenta</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark box-shadow " style="padding: 8px; background-color: rgb(156, 94, 214) " ;>
+                <!--CAJA CONTRAIBLE-->
+                <div class="container-fluid d-flex justify-content-between ">
+                    <a href="index.html "><img src="{% static 'app/img/LOGOwhite.png '%} " alt=" " width="90 "></a>
+                    <h1 class="lead text-white " style="font-size: 30px; margin-right: 1077px; "><strong>¡Bienvenido!</strong></h1>
+                    <div class="btn-group dropleft ">
+                        <button type="button " class="btn dropdown-toggle text-white " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false " style="background: rgb(53, 165, 92); ">
+                Cuenta<!--BOTÓN DESPLEGAR MENÚ-->
+            </button>
+                        <div class="dropdown-menu text-center " aria-labelledby="dropdownMenuBoton ">
+                            <div class="text-center font-weight-bold ">¡Únete a la comunidad!</div>
+                            <a href="# " class="dropdown-item " data-toggle="modal " data-target="#myModal1 ">Iniciar Sesión</a>
+                            <div class="dropdown-divider "></div>
+                            <!--Dividir sección barra plegable-->
+                            <div class="text-center font-weight-bold ">¿Eres cliente nuevo?</div>
+                            <a href="# " class="dropdown-item " id="crear_cuenta " data-toggle="modal " data-target="#myModal ">Crear Cuenta</a>
+                        </div>
+                    </div>
+
+                    <button class="navbar-toggler text-white " type="button " data-toggle="collapse " data-target="#navbarHeader " aria-controls="navbarHeader " aria-expanded="false " aria-label="Toggle navigation " style="font-family: Arial, Helvetica,
+        sans-serif; ">
+          <!--Acá va el nombre de la caja--> <img src="{% static 'app/img/perfilWhite.png '%} " alt=" " width="25 "> Sin usuario <span class="navbar-toggler-icon "></span>
+          </button>
+        </header>
+        <!--NAV-->
+        <section>
+            <nav class="navbar navbar-expand-sm justify-content-center " style="height: 50px; background-color: rgb(144, 74, 209) " ;>
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <div class="dropdown ">
+                            <button type="button " class="btn dropdown-toggle btn-sm text-white " data-toggle="dropdown " style="background-color: rgb(104, 55, 150); ">
+                    Perro
+                  </button>
+                            <div class="dropdown-menu ">
+                                <div class="text-center font-weight-bold ">Accesorios</div>
+                                <a href="productosGato.html " class="dropdown-item ">Bandanas</a>
+                                <a href=" " class="dropdown-item ">Correas</a>
+                                <a href=" " class="dropdown-item ">Identificadores</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# "> </a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="dropdown ">
+                            <button type="button " class="btn dropdown-toggle btn-sm text-white " data-toggle="dropdown " style="background-color: rgb(104, 55, 150); ">
+                    Gato
+                  </button>
+                            <div class="dropdown-menu ">
+                                <div class="text-center font-weight-bold ">Accesorios</div>
+                                <a href="productosGato.html " class="dropdown-item ">Bandanas</a>
+                                <a href=" " class="dropdown-item ">Correas</a>
+                                <a href=" " class="dropdown-item ">Identificadores</a>
+                            </div>
+                        </div>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline " action="# " style="margin-left: 100px; ">
+                    <input class="form-control mr-sm-2 " type="text " placeholder="Buscar ">
+                    <button class="btn text-white " type="submit " style="font-size: 15px; background: rgb(53, 165, 92); ">Buscar</button>
+                </form>
+            </nav>
+        </section>
+
+        {% block contenido %} {% block usuario %} {% endblock usuario %} {% endblock contenido %}
+        <!--FOOTER-->
+        <div class="container">
+            <footer class="row row-cols-5 py-5 my-5 border-top">
+                <div class="col col-sm col-lg">
+                    <p class="text-muted" style="margin-top: 40px;">&copy; PetWorld 2022</p>
+                </div>
+
+                <div class="col col-sm col-lg"></div>
+
+                <div class="col col-sm col-lg text-center">
+                    <a href="index.html"><img src="{% static 'app/img/logoslogan.png' %}" alt="" width="150"></a>
+                </div>
+
+                <div class="col"></div>
+
+                <div class="col col-sm col-lg">
+                    <h5>Secciones</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted" data-toggle="tooltip" title="Envíanos un mensaje si tienes un problema o duda">Contáctanos</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#social" data-toggle="tooltip" title="¡Búscanos!">Redes Sociales</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#desarr" data-toggle="tooltip" title="Conoce a quienes dieron vida a este proyecto">Desarrolladores</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" data-toggle="modal" data-target="#termUso" data-toggle="tooltip" title="Usos y términos de PetWorld">Políticas y términos</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <!--TOOLTIP-->
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

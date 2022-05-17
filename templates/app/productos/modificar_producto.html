@@ -1,0 +1,23 @@
+{% extends 'app/base.html'%}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 m-5">
+        <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+            <table>
+                {{ form }}
+            </table>
+            <input type="submit" class="btn btn-success" value="modificar">
+        </form>
+        <div class="alert alert-success">
+            <strong>Correcto!</strong> {{ mensaje }}
+        </div>
+    </div>
+    <div class="col-3"></div>
+</div>
+
+{% endblock %}

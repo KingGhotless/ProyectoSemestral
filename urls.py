@@ -1,0 +1,30 @@
+from django.urls import path
+from .views import *
+
+urlpatterns = [
+    path('', index, name='Página Principal'),
+    path('carrito/', carrito, name='carrito'),
+    path('carritoPremium/', carritoPremium, name='Carrito premium'),
+    path('estadoPedido/', estadoPedido, name='Estado pedido'),
+    path('help/', help, name='Help'),
+    path('historial/', historial, name='Historial'),
+    path('historialPremium/', historialPremium, name='Historial Premium'),
+    path('indexUsu/', indexUsu, name='Página Principal Usuario'),
+    path('indexSuscrip/', indexSuscrip, name='Página Principal Suscriptor'),
+    path('prodGatoBandana/', prodGatoBandana, name='Producto Gatos Bandana'),
+    path('prodGatoBandanaPremium/', prodGatoBandanaPremium, name='Producto Gatos Bandana Premium'),
+    path('prodGatoCorrea/', prodGatoCorrea, name='Producto Gatos Correa'),
+    path('prodGatoCorreaPremium/', prodGatoCorreaPremium, name='Producto Gatos Correa Premium'),
+    path('prodGatoId/', prodGatoId, name='Producto Gatos Identificadores'),
+    path('prodGatoIdPremium/', prodGatoIdPremium, name='Producto Gatos Identificadores Premium'),
+    path('prodPerroBandana/', prodPerroBandana, name='Producto Perros Bandana'),
+    path('prodPerroBandanaPremium/', prodPerroBandanaPremium, name='Producto Perros Bandana Premium'),
+    path('prodPerroCorrea/', prodPerroCorrea, name='Producto Perros Correa'),
+    path('prodPerroCorreaPremium/', prodPerroCorreaPremium, name='Producto Perros Correa Premium'),
+    path('prodPerroId/', prodPerroId, name='Producto Perros Identificadores'),
+    path('prodPerroIdPremium/', prodPerroIdPremium, name='Producto Perros Identificadores Premium'),
+    path('modificar_producto/<codigo>/', modificar_producto, name='modificar_producto'),
+    path('eliminar_producto/<codigo>/', eliminar_producto, name='eliminar_producto'),
+    path('listar_producto/', listar_producto, name='listar_producto'),
+    path('agregar_producto/', agregar_producto, name='agregar producto'),
+]
